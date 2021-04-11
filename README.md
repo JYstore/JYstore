@@ -14,7 +14,7 @@
 2. 任务在 develop 主分支的基础上 checkout 一个新分支开始做
 3. 新分支的命名规则：
    - t + 任务卡片数字
-   - 如卡片 
+   - 如卡片
    - <img width="613" alt="Screen Shot 2021-04-11 at 18 00 24" src="https://user-images.githubusercontent.com/20460334/114299802-dd901280-9aef-11eb-8a02-1e3055a3a088.png">
    - 则 git checkout -b t73
 
@@ -49,6 +49,7 @@
 
 
 ## 注意事项
+
 1. 不能在一个 pull request 下做多个不相关内容，如实现后台用户列表、实现用户可以登陆，应当分开两个分支开发与提交
 2. 禁止非项目主程 merge 代码进入 develop
 3. 禁止在 master 、develop 分支上直接修改代码
