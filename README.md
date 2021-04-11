@@ -13,10 +13,10 @@
 1. 一张任务卡片对应一个分支，如果任务分支功能太大，可以自行分拆成为多个子任务卡片
 2. 任务在 develop 主分支的基础上 checkout 一个新分支开始做
 3. 新分支的命名规则：
-- t + 任务卡片数字
-- 如卡片 
-- <img width="613" alt="Screen Shot 2021-04-11 at 18 00 24" src="https://user-images.githubusercontent.com/20460334/114299802-dd901280-9aef-11eb-8a02-1e3055a3a088.png">
-- 则 git checkout -b t73
+   - t + 任务卡片数字
+   - 如卡片 
+   - <img width="613" alt="Screen Shot 2021-04-11 at 18 00 24" src="https://user-images.githubusercontent.com/20460334/114299802-dd901280-9aef-11eb-8a02-1e3055a3a088.png">
+   - 则 git checkout -b t73
 
 #### 二、如何使用卡片
 
@@ -29,13 +29,13 @@
 1. 在本地 Terminal 中输入 Git push origin txx 把 branch 推到到 github 上
 2. 在 Github 里提交 new pull request
 3. 标题：分支名 + 你在这个分支做了什么？
-- 标题范例：T34 实现登陆功能、T35 修改 navbar 样式；
+   - 标题范例：T34 实现登陆功能、T35 修改 navbar 样式；
 
 4. 详细描述你在这个分支里做了什么
-- 填如该功能对应的任务卡片的可访问链接
-- 描述该分支完成了什么功能，比附上功能的截图/动图
-- **范例：**
-- <img width="957" alt="Screen Shot 2021-04-11 at 18 10 33" src="https://user-images.githubusercontent.com/20460334/114300132-45932880-9af1-11eb-8273-a1d336ce8656.png">
+   - 填如该功能对应的任务卡片的可访问链接
+   - 描述该分支完成了什么功能，比附上功能的截图/动图
+   - **范例：**
+   - <img width="957" alt="Screen Shot 2021-04-11 at 18 10 33" src="https://user-images.githubusercontent.com/20460334/114300132-45932880-9af1-11eb-8273-a1d336ce8656.png">
 
 ## 功能 review
 
