@@ -2,7 +2,7 @@
 
 ## 开发前
 
-1. 初始化项目，让其能在本地跑起来
+1. git clone 项目到本地，然后初始化项目，让其能在本地跑起来（当前是使用rails 6 最新版本）
 2. 请在 https://app.clubhouse.io/jystore 找到ready for development 的任务
 3. 挑选一张任务卡片，把任务执行者指向自己，比把卡片拉到 In development 的位置，开始你工作
 
