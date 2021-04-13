@@ -1,4 +1,4 @@
-## Redmine Issue Link
+## Issue Link
 
 * https://app.clubhouse.io/jystore/story/(在這填上卡片号)
 
