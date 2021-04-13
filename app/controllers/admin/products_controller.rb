@@ -1,4 +1,10 @@
 class Admin::ProductsController < ApplicationController
+
+  layout "admin"
+
+  before_action :authenticate_user!
+  before_action :admin_required
+
   def index
     @products = Product.all
   end
@@ -35,7 +41,7 @@ class Admin::ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.destroy
     redirect_to admin_products_path
-  end 
+  end
 
   private
 
