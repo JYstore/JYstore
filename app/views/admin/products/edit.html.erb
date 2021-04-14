@@ -27,6 +27,8 @@
     <%= f.input :image, as: :file %>
   </div>
 
+  <%= f.input :is_hidden, label: "下架该商品" %>
+
   <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
 
 <% end %>
