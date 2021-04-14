@@ -5,32 +5,39 @@
 <table class="table table-bordered">
   <thead>
     <tr>
+      <th>#</th>
+      <th width="220">Product Pic</th>
       <th>Name</th>
-      <th>Description</th>
-      <th>quantity</th>
       <th>Price</th>
-      <th>操作选项</th>
+      <th width="100"> Options</th>
     </tr>
   </thead>
   <tbody>
-  <% @products.each do |product| %>
-  <tr>
-  <td>
-  <%= link_to(product.title, admin_product_path(product)) %>
-  </td>
-  <td>
-    <%= product.description %>
-  </td>
-  <td>
-    <%= product.quantity %>
-  </td>
-  <td>
-    <%= product.price %>
-  </td>
-  <td>
-    <%= link_to("Edit", edit_admin_product_path(product)) %>
-    <%= link_to("Delete", admin_product_path(product),method: :delete, data: {confirm: "Are you firm?"}) %>
-  </td>
-  <% end %>
-</tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td>
+          <%= product.id %>
+        </td>
+        <td>
+          <%= link_to product_path(product) do %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+            <% else %>
+              <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+            <% end %>
+          <% end %>
+        </td>
+        <td>
+          <%= product.title %>
+        </td>
+        <td>
+          <%= product.price %>
+        </td>
+        <td>
+          <%= link_to("Edit", edit_admin_product_path(product)) %>
+          <%= link_to("Delete", admin_product_path(product), method: :delete, data: { confirm: "Are you sure?"} ) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
