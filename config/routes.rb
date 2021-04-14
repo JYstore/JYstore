@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'products#index'
   devise_for :users
+
   namespace :admin do
     resources :products
     resources :users
@@ -8,5 +9,15 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  resources :products
+  resources :carts do
+    collection do
+      delete :clean
+    end
+  end
+  resources :products do
+    member do
+      post :add_to_cart
+    end
+  end
+  resources :cart_items
 end
