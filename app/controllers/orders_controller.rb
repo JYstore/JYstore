@@ -49,6 +49,6 @@ class OrdersController < ApplicationController
    private
 
    def order_params
-     params.require(:order).permit(:billing_name, :billing_address, :shipping_name, :shipping_address, :billing_contact_information, :shipping_contact_information)
+     params.require(:order).permit(:total, :billing_name, :billing_address, :shipping_name, :shipping_address, :billing_contact_information, :shipping_contact_information)
    end
 end
