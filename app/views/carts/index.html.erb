@@ -14,6 +14,7 @@
           <th colspan="2">商品资讯</th>
           <th>单价</th>
           <th>数量</th>
+          <th>小计</th>
           <th>操作选项 </th>
         </tr>
       </thead>
@@ -43,6 +44,9 @@
               <% end %>
             </td>
             <td>
+                <%= cart_item.quantity * cart_item.product.price %>
+            </td>
+            <td>
               <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
                 <i class="fa fa-trash"></i>
               <% end %>
@@ -66,7 +70,7 @@
     <hr>
 
     <div class="checkout clearfix">
-      <%= link_to("确认结账", "#", method: :post, class: "btn btn-lg btn-danger pull-right") %>
+      <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
     </div>
   </div>
 </div>
