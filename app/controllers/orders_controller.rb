@@ -26,11 +26,11 @@ class OrdersController < ApplicationController
    def show
      @order = Order.find(params[:id])
      @product_lists = @order.product_lists
-   end  
+   end
 
    private
 
    def order_params
-     params.require(:order).permit(:billing_name, :billing_address, :shipping_name, :shipping_address)
+     params.require(:order).permit(:billing_name, :billing_address, :shipping_name, :shipping_address, :billing_contact_information, :shipping_contact_information)
    end
 end
