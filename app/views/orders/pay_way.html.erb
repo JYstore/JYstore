@@ -1,0 +1,2 @@
+<%= link_to("支付宝支付", alipay_page_order_path(@order.token), :method => :get, :class => "btn btn-danger") %>
+<%= link_to("微信支付", wechat_page_order_path(@order.token), :method => :get, :class => "btn btn-danger") %>
