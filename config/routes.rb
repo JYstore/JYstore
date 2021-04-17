@@ -27,7 +27,13 @@ Rails.application.routes.draw do
       post :pay_with_alipay
       post :pay_with_wechat
     end
-  end 
+  end
+
+  resources :payments do
+    member do
+      get :completed
+    end
+  end
 
   namespace :account do
     resources :orders
