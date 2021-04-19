@@ -70,7 +70,11 @@
     <hr>
 
     <div class="checkout clearfix">
-      <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
+      <% if current_cart.total_price > 0 %>
+        <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-danger pull-right") %>
+      <% else %>
+        <%= link_to("添加商品", products_path, method: :get, class: "btn btn-lg btn-primary pull-right") %>
+      <% end %>
     </div>
   </div>
 </div>
