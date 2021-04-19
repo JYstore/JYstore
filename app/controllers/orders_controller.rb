@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
          product_list.save
        end
        current_cart.clean!
-       OrderMailer.notify_order_placed(@order).deliver!
+
 
        redirect_to order_path(@order.token)
      else
@@ -39,7 +39,7 @@ class OrdersController < ApplicationController
      @order = Order.find_by_token(params[:id])
    end
 
-   def pay_way
+   def payment_page
      @order = Order.find_by_token(params[:id])
    end
 

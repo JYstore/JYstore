@@ -28,7 +28,7 @@ Rails.application.routes.draw do
       post :pay_with_wechat
       get :wechat_page
       get :alipay_page
-      get :pay_way
+      get :payment_page
     end
   end
 
