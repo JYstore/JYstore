@@ -6,6 +6,7 @@ class Order < ApplicationRecord
    end
 
    belongs_to :user
+   has_one :payment
 
    validates :shipping_name, presence: true
    validates :shipping_address, presence: true
