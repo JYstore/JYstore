@@ -18,7 +18,6 @@ class OrdersController < ApplicationController
        end
        current_cart.clean!
 
-
        redirect_to order_path(@order.token)
      else
        render 'carts/checkout'
