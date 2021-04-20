@@ -32,7 +32,7 @@ class OrdersController < ApplicationController
    def pay_with_alipay
      @order = Order.find_by_token(params[:id])
      @order.set_payment_with!("alipay")
-     @order.pay!
+     @order.make_payment!
 
      redirect_to completed_payment_path
    end
@@ -40,9 +40,16 @@ class OrdersController < ApplicationController
    def pay_with_wechat
      @order = Order.find_by_token(params[:id])
      @order.set_payment_with!("wechat")
-     @order.pay!
+     @order.make_payment!
 
      redirect_to completed_payment_path
+   end
+
+   def apply_to_cancel
+     @order = Order.find_by_token(params[:id])
+     OrderMailer.apply_cancel(@order).deliver!
+     flash[:notice] = "已提交申请"
+     redirect_back(fallback_location: root_path)
    end
 
    private

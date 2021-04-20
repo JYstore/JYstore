@@ -41,12 +41,15 @@ ActiveRecord::Schema.define(version: 2021_04_19_082819) do
     t.string "token"
     t.string "aasm_state", default: "order_placed"
     t.index ["aasm_state"], name: "index_orders_on_aasm_state"
+<<<<<<< HEAD
+=======
   end
 
   create_table "payments", force: :cascade do |t|
     t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+>>>>>>> develop
   end
 
   create_table "product_lists", force: :cascade do |t|
