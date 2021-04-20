@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="text-center">
+    <h1>支付订单</h1>
+    <h3>应付金额 ：<%= @order.total %> 元</h3>
+    <br>
+    <%= link_to("支付宝支付", pay_with_alipay_order_path(@order.token), :method => :post, :class => "btn btn-info") %>
+    <%= link_to("微信支付", pay_with_wechat_order_path(@order.token), :method => :post, :class => "btn btn-success") %>
+  </div>
+</div>
