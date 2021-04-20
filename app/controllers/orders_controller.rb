@@ -17,7 +17,6 @@ class OrdersController < ApplicationController
          product_list.save
        end
        current_cart.clean!
-       OrderMailer.notify_order_placed(@order).deliver!
 
        redirect_to order_path(@order.token)
      else
@@ -35,7 +34,7 @@ class OrdersController < ApplicationController
      @order.set_payment_with!("alipay")
      @order.make_payment!
 
-     redirect_to order_path(@order.token), notice: "使用支付宝成功完成付款"
+     redirect_to completed_payment_path
    end
 
    def pay_with_wechat
@@ -43,7 +42,7 @@ class OrdersController < ApplicationController
      @order.set_payment_with!("wechat")
      @order.make_payment!
 
-     redirect_to order_path(@order.token), notice: "使用微信成功完成付款"
+     redirect_to completed_payment_path
    end
 
    def apply_to_cancel
@@ -56,6 +55,6 @@ class OrdersController < ApplicationController
    private
 
    def order_params
-     params.require(:order).permit(:billing_name, :billing_address, :shipping_name, :shipping_address, :billing_contact_information, :shipping_contact_information)
+     params.require(:order).permit(:total, :billing_name, :billing_address, :shipping_name, :shipping_address, :billing_contact_information, :shipping_contact_information)
    end
 end
