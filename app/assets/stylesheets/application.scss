@@ -25,6 +25,15 @@
 }
 
 //导航栏字体颜色
-.navbar-fontcolor{
-  color: #86c040
+.navbar-default .navbar-brand {
+color: #F5F5F5; //字体颜色
+
 }
+
+
+
+//导航栏链接颜色
+ .navbar-default .navbar-nav > li > a{
+   color: #F5F5F5;
+
+ }
