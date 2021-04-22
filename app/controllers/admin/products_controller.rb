@@ -1,7 +1,7 @@
 class Admin::ProductsController < ApplicationController
 
   layout "admin"
-
+  before_action :find_product_by_id, only: [:edit, :update, :destroy]
   before_action :authenticate_user!
   before_action :admin_required
 
@@ -26,12 +26,10 @@ class Admin::ProductsController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:id])
     @categories = Category.all.map { |c| [c.name, c.id]}
   end
 
   def update
-    @product = Product.find(params[:id])
     @product.category_id = params[:category_id]
 
     if @product.update(product_params)
@@ -42,12 +40,15 @@ class Admin::ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.find(params[:id])
     @product.destroy
     redirect_to admin_products_path
   end
 
   private
+
+  def find_product_by_id
+    @product = Product.find(params[:id])
+  end
 
   def product_params
     params.require(:product).permit(:title, :description, :quantity, :price, :image, :is_hidden, :category_id)
