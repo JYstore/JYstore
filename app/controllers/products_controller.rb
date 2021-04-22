@@ -1,6 +1,10 @@
 class ProductsController < ApplicationController
   def index
     @products = Product.where(:is_hidden => false)
+    if params[:category].present?
+      @category = Category.find_by(params[:category])
+      @products = @products.where(:category => @category)
+    end
   end
 
   def show
