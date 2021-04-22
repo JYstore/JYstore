@@ -1,6 +1,11 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.where(:is_hidden => false)
+    if params[:category].blank?
+      @products = Product.where(:is_hidden => false)
+    else
+      @category = Category.find_by(id: params[:category]) #找出是哪个category
+      @products = Product.where(:category => @category) #找出这个category下的Job
+    end
   end
 
   def show
