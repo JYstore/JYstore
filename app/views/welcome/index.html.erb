@@ -21,8 +21,8 @@
              */
             #container{
                 position: relative;
-                width: 1800px;
-                height: 400px;
+                width: 1300px;
+                height: 550px;
                 margin: 50px auto;
                 overflow: hidden;
             }
@@ -32,20 +32,30 @@
              */
             ul#imgs{
                 position: absolute;
-                width: calc(1800px * 7);
-                left: -600px;
+                width: calc(1300px * 7);
+                left: -1300px;
             }
             ul#imgs li{
                 float: left;
-                width: 1800px;
-                height: 400px;
+                width: 1300px;
+                height: 550px;
 
                 background-color: #42B983;
                 color: white;
                 text-align: center;
-                line-height: 400px;
+                line-height: 550px;
                 font-size: 100px;
+
             }
+
+            #imgs img {
+                max-width: 100%;
+                max-height: 100%;
+                width: 1300px;
+                display: block;
+                margin: auto;
+            }
+
             #imgs li:nth-child(odd){
                 /* 模拟图片 */
                 /*background-color: #9ACD32;*/
@@ -54,7 +64,7 @@
             /**
              * 2、前后翻页按钮
              */
-            #prev,#next{
+            /* #prev,#next{
                 position: absolute;
                 top: calc(50% - 15px);;
                 width: 40px;
@@ -78,14 +88,14 @@
             }
             #next{
                 right: 10px;
-            }
+            } */
 
             /**
              * 3、小圆点定点翻页
              */
             ul#index{
                 position: absolute;
-                top: 360px;
+                top: 460px;
                 left: calc(50% - 55px);
                 height: 12px;
             }
@@ -95,7 +105,7 @@
                 width: 12px;
                 margin: 0 5px;
                 border-radius:50%;
-                background-color: #800080;
+                background-color: #BDBDBD;
                 opacity: .4;
                 cursor: pointer;
             }
@@ -163,9 +173,9 @@
             /**
              * 一些可以设置的参数
              */
-            var PAGE_WIDTH = 1800,
-                PAGE_SLIDE_TIME = 1800,    //单页滑动时间
-                PAGE_INTERVAL = 3600 + PAGE_SLIDE_TIME,    //换页间隔时间
+            var PAGE_WIDTH = 1300,
+                PAGE_SLIDE_TIME = 1300,    //单页滑动时间
+                PAGE_INTERVAL = 2600 + PAGE_SLIDE_TIME,    //换页间隔时间
                 curIndex = 1,    //合法取值 1 ~ 5(0 表示左边假的，6表示右边假的)
                 isPaging = false    //是否正在翻页(用来处理连续点击翻页产生的bug)
 
