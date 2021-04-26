@@ -1,16 +1,16 @@
 <div class="row">
   <div class="col-md-12">
-
+    <div class="panel panel-default">
+      <div class="panel-heading" >
     <%= link_to("清空购物车", clean_carts_path ,
                 method: :delete , class: "pull-right",
                 style: "text-decoration: underline;",
                 data: { confirm: "你确定要清空整个购物车吗？"} )%>
 
+   <table class="table">
     <h2> 购物车 </h2>
-
-    <table class="table table-bordered">
       <thead>
-        <tr>
+        <tr class="active">
           <th colspan="2">商品资讯</th>
           <th>单价</th>
           <th>数量</th>
@@ -33,6 +33,8 @@
             </td>
             <td>
               <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
+              <br>
+              <%= cart_item.product.description %>
             </td>
             <td>
               <%= cart_item.product.price %>
@@ -75,6 +77,8 @@
       <% else %>
         <%= link_to("添加商品", products_path, method: :get, class: "btn btn-lg btn-primary pull-right") %>
       <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -78,3 +78,8 @@ color: #F5F5F5; //字体颜色
 //去除白色边框
   .navbar-default {
     border-color: transparent;}
+
+//购物车镶嵌板背景颜色
+  .panel-default .panel-heading{
+   background-color: white;
+ }
