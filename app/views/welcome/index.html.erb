@@ -1,154 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>轮播图 - jQuery 版本</title>
-        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js" type="text/javascript" charset="utf-8"></script>
-    </head>
-    <body>
-        <!--
-            1、进行页面布局
-            2、js 代码
-        -->
-        <div class="carouselstyle">
-        <div id="container">
-            <!--图片区-->
-            <ul id="imgs">
-                <li>
-                    <img src="/images/carousel5.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel1.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel2.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel3.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel4.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel5.jpeg" />
-                </li>
-                <li>
-                    <img src="/images/carousel1.jpeg" />
-                </li>
-            </ul>
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
-            <ul id="index">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        </div>
-        <script type="text/javascript">
-            /**
-             * 事件绑定
-             * 1、页面加载完，自动循环翻页
-             * 2、翻页按钮，翻页
-             * 3、定点翻页
-             * 4、翻页时同步圆点状态
-             * 5、鼠标进入，停止自动翻页
-             * 6、快速点击翻页的bug(加 isPaging 标志)
-             */
-
-            /**
-             * 0、自动轮播
-             */
-
-            /**
-             * 一些可以设置的参数
-             */
-            var PAGE_WIDTH = 1300,
-                PAGE_SLIDE_TIME = 1300,    //单页滑动时间
-                PAGE_INTERVAL = 2600 + PAGE_SLIDE_TIME,    //换页间隔时间
-                curIndex = 1,    //合法取值 1 ~ 5(0 表示左边假的，6表示右边假的)
-                isPaging = false    //是否正在翻页(用来处理连续点击翻页产生的bug)
-
-            var intervalId;
-            $(function(){
-                intervalId = setInterval(next,PAGE_INTERVAL)
-            })
-
-            /**
-             * 1、页面按钮
-             */
-            $("#next").click(function(){
-                next()
-            })
-
-            $("#prev").click(function(){
-                next(false)
-            })
-
-            $("#index li").click(function(){
-                next($(this).index() + 1)
-            })
-
-            /**
-             * 2、鼠标出入
-             */
-            $("#container").hover(function(){
-                clearInterval(intervalId)
-            },function(){
-                intervalId = setInterval(next,PAGE_INTERVAL)
-            })
-
-            /**
-             * 翻页核心功能
-             * next(boolean|number])
-             *
-             *         boolean:    表示前后翻页
-             *         number:        表示定点翻页
-             */
-            function next(flag=true){
-
-                if(isPaging){
-                    return
-                }
-                isPaging = true;
-
-                var tempIndex = curIndex;
-
-                //1 确定要翻过去的页码,计算 left 值
-                typeof flag === "boolean" && (curIndex += flag ? 1 : -1)
-                typeof flag === "number" && (curIndex = flag)
-                left = - curIndex * PAGE_WIDTH
-
-                //2 执行翻页动画
-                $("#imgs").animate({"left":left},PAGE_SLIDE_TIME,function(){
-                    if(curIndex == 0 || curIndex == 6){
-                        //页码校正
-                        curIndex == 0 && (curIndex = 5);
-                        curIndex == 6 && (curIndex = 1)
-
-                        left = - curIndex * PAGE_WIDTH
-                        $("#imgs").css("left",left)
-                    }
-                    //清除正在翻页标志
-                    isPaging = false
-                })
-
-                //3 同步点的状态
-                if(curIndex == 0 || curIndex == 6){
-                    curIndex == 0 && updateIdxState(0,4);
-                    curIndex == 6 && updateIdxState(4,0);
-                }else{
-                    updateIdxState(tempIndex -1,curIndex -1)
-                }
-
-                function updateIdxState(oldIdx,newIdx){
-                    $("#index li").eq(oldIdx).removeClass("active")
-                    $("#index li").eq(newIdx).addClass("active")
-                }
-            }
-
-        </script>
-    </body>
-</html>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <h1>title1</h1>
+        <p>some description1</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <h1>title2</h1>
+        <p>some description2</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
