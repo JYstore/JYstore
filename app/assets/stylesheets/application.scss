@@ -84,6 +84,7 @@ color: #F5F5F5; //字体颜色
   .footer-backgroundcolor{
     background-color: #E0E0E0;
     height: 340px;
+    margin-top: 340px;
   }
 
 //footer文字样式
@@ -96,4 +97,13 @@ color: #F5F5F5; //字体颜色
  .footer-font-right{
    margin-top: -50px;
    margin-left: 980px;
+ }
+
+ .footer-font-big{
+   color: #5079d9;
+   font-size: 20px;
+ }
+
+ .page-height{
+   height: 200px;
  }

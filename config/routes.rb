@@ -49,6 +49,7 @@ Rails.application.routes.draw do
     resources :orders
   end
 
-
+  resources :services
+  resources :abouts
   resources :cart_items
 end
