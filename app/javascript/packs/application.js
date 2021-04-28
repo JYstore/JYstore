@@ -11,6 +11,8 @@ require("channels")
 
 require("bootstrap")
 
+require("packs/welcome.js")
+
 
 
 
