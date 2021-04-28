@@ -14,9 +14,9 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
- @import "font-awesome";
+
+@import 'bootstrap/scss/bootstrap';
+@import "font-awesome";
 
 
 //导航栏logo样式
