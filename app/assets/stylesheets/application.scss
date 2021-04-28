@@ -83,11 +83,17 @@ color: #F5F5F5; //字体颜色
 //footer背景颜色
   .footer-backgroundcolor{
     background-color: #E0E0E0;
-    height: 230px;
+    height: 340px;
   }
 
+//footer文字样式
   .footer-font{
     margin-top: 50px;
-    margin-right: 400px;
+    margin-right: 540px;
     word-spacing: 120px;
   }
+
+ .footer-font-right{
+   margin-top: -50px;
+   margin-left: 980px;
+ }
