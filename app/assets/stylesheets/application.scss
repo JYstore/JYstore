@@ -83,20 +83,20 @@ color: #F5F5F5; //字体颜色
 //footer背景颜色
   .footer-backgroundcolor{
     background-color: #E0E0E0;
-    height: 340px;
-    margin-top: 340px;
+    height: 360px;
+    margin-top: 360px;
   }
 
 //footer文字样式
   .footer-font{
     margin-top: 50px;
     margin-right: 540px;
-    word-spacing: 120px;
+    word-spacing: 80px;
   }
 
  .footer-font-right{
-   margin-top: -50px;
-   margin-left: 980px;
+   margin-top: 20px;
+   margin-left: 910px;
  }
 
  .footer-font-big{
@@ -104,6 +104,7 @@ color: #F5F5F5; //字体颜色
    font-size: 20px;
  }
 
+//关于商店和隐私条款的内容高度
  .page-height{
    height: 200px;
  }
