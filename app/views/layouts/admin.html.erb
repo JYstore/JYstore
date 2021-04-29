@@ -7,18 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container-row">
-    <%= render "common/navbar" %>
+  <%= render "common/navbar" %>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2">
-        <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-          <li> <%= link_to("Products", admin_products_path) %> </li>
-          <li> <%= link_to("Orders", admin_orders_path) %> </li>
-          <li> <%= link_to("用户管理", admin_users_path) %> </li>
-          <li> <%= link_to("分类管理", admin_categories_path) %> </li>
-        </ul>
+      <div class="col-md-2 mt-5">
+        <div class="list-group">
+          <%= active_link_to("Products", admin_products_path, class: "list-group-item list-group-item-action") %>
+          <%= active_link_to("Orders", admin_orders_path, class: "list-group-item list-group-item-action") %>
+          <%= active_link_to("用户管理", admin_users_path, class: "list-group-item list-group-item-action") %>
+          <%= active_link_to("分类管理", admin_categories_path, class: "list-group-item list-group-item-action") %>
+        </div>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 mt-5">
         <%= yield %>
       </div>
     </div>
