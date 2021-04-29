@@ -127,7 +127,7 @@ color: #F5F5F5; //字体颜色
     }
 
     .bigcard{
-        padding: 0px;
+        padding-left: 15px;
         margin-left: 0px;
         margin-bottom: 0px;
         background-color: white;
@@ -136,6 +136,7 @@ color: #F5F5F5; //字体颜色
         display: inline-block;
         vertical-align: top;
         width: 1200px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-
-   
