@@ -1,40 +1,42 @@
 <div class="col-md-12">
-       <br><br><br>
-      <div class="bigcard">
-       <h1>商品列表</h1>
-        <div class="row">
-          <% @products.each do |product| %>
-            <div class="col-xs-12 col-xs-3">
-              <div class="card">
-              <%= link_to product_path(product) do %>
-                <% if product.image.present? %>
-                  <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-                <% else %>
-                  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-                <% end %>
-              <% end %>
-               <div style="text-align:center">
-                <ol>
-                  <div class="title">
-                   <%= link_to product_path(product) do %>
-                     <%= product.title %>
-                   <% end %>
-                  </div>
-                </ol>
-                <ol>
-                  <div class="description">
-                   <%= product.description %>
-                  </div>
-                </ol>
-                <ol>
-                  <div class="price">
-                   ￥<%= product.price %>
-                  </div>
-                </ol>
-               </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
+  <br><br><br>
+    <div class="bigcard">
+      <div class="cardtitle">
+       商品列表
       </div>
+      <div class="row">
+        <% @products.each do |product| %>
+          <div class="col-xs-12 col-xs-3">
+            <div class="card">
+            <%= link_to product_path(product) do %>
+              <% if product.image.present? %>
+                <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+              <% else %>
+                <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+              <% end %>
+            <% end %>
+             <div style="text-align:center">
+              <ol>
+                <div class="title">
+                 <%= link_to product_path(product) do %>
+                   <%= product.title %>
+                 <% end %>
+                </div>
+              </ol>
+              <ol>
+                <div class="description">
+                 <%= product.description %>
+                </div>
+              </ol>
+              <ol>
+                <div class="price">
+                 ￥<%= product.price %>
+                </div>
+              </ol>
+             </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
 </div>

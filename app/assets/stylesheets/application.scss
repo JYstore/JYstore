@@ -18,6 +18,8 @@
 @import 'bootstrap/scss/bootstrap';
 @import "font-awesome";
 
+//设置所有页面的背景颜色
+  body{ background:#ededed}
 
 //导航栏logo样式
   .navbar-brand > img {
@@ -132,11 +134,18 @@ color: #F5F5F5; //字体颜色
         margin-bottom: 0px;
         background-color: white;
         border-radius: 0px;
-        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
         display: flex;
         vertical-align: top;
         width: 1200px;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .cardtitle{
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      height: 60px;
     }
