@@ -94,7 +94,7 @@ color: #F5F5F5; //字体颜色
         background-color: white;
         box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
         border-radius: 0px;
-        display: inline-block;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
+        display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
         vertical-align: top;//高度对齐
         width: 300px;
     }
@@ -132,8 +132,7 @@ color: #F5F5F5; //字体颜色
         margin-bottom: 0px;
         background-color: white;
         box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 0px;
-        display: inline-block;
+        display: flex;
         vertical-align: top;
         width: 1200px;
         flex-direction: column;
