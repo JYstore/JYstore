@@ -79,9 +79,6 @@ color: #F5F5F5; //字体颜色
   .navbar-default {
     border-color: transparent;}
 
-
-
-
 //卡片里的图片尺寸
     .card img {
         width: 100%;
@@ -91,14 +88,15 @@ color: #F5F5F5; //字体颜色
 
 //卡片主体内容
     .card{
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 4px;
-        display: inline-block;
-        margin-left: 18px;
-        margin-bottom: 18px;
+        margin-left: 0px;
+        margin-bottom: 0px;
         padding:20px;
-        vertical-align: top;
+        background-color: white;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 0px;
+        display: inline-block;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
+        vertical-align: top;//高度对齐
+        width: 300px;
     }
 
     .card span {
@@ -110,7 +108,7 @@ color: #F5F5F5; //字体颜色
     }
 //实现鼠标划过时的悬浮特效
     .card:hover {
-      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .25);
+      box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, .25);
       transition: all .2s ease-in-out;
     }
 
@@ -120,9 +118,24 @@ color: #F5F5F5; //字体颜色
     }
     .card .description {
       margin-right: 25px;
+      font-size: 15px;
     }
     .card .price {
       color: #EF6C00;
-      font-size: 30px;
+      font-size: 20px;
       margin-right: 35px;
     }
+
+    .bigcard{
+        padding: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        background-color: white;
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 0px;
+        display: inline-block;
+        vertical-align: top;
+        width: 1200px;
+    }
+
+   
