@@ -15,7 +15,6 @@
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
             <% end %>
-             <div style="text-align:center">
               <ol>
                 <div class="title">
                    <%= product.title %>
@@ -23,15 +22,15 @@
               </ol>
               <ol>
                 <div class="description">
-                 <%= product.description %>
+                    <%= product.description %>
                 </div>
               </ol>
+              <br>
               <ol>
                 <div class="price">
-                 ￥<%= product.price %>
+                   ￥<%= product.price %>.00
                 </div>
               </ol>
-             </div>
             </div>
           </div>
         <% end %>
