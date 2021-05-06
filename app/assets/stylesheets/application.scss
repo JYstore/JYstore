@@ -81,30 +81,80 @@ color: #F5F5F5; //字体颜色
 
 
 //footer背景颜色
-  .footer-backgroundcolor{
-    background-color: white;
-    height: 360px;
-    margin-top: 360px;
+  .footer-container{
+    background-color: #fafafa;
+    height: 340px;
+    margin-top: 340px;
   }
 
 //footer文字样式
-  .footer-font{
-    margin-top: 50px;
-    margin-right: 540px;
+  .footer-font-left{
+    margin-top: 40px;
     word-spacing: 80px;
+    font-size: 12px;
+    float: left;
+    line-height: 25px;
   }
 
  .footer-font-right{
-   margin-top: 20px;
-   margin-left: 910px;
+   margin-top: 60px;
+   float: right;
  }
 
  .footer-font-big{
+   position: relative;
    color: #5079d9;
-   font-size: 20px;
+   font-size: 18px;
+   line-height: 1;
+   cursor: default;
  }
 
+ .footer-font-small{
+   font-size: 12px;
+   line-height: 1;
+   color: #999;
+   margin-top: -25px;
+   text-align: right;
+ }
+
+ .footer-font-small-bottom{
+   font-size: 12px;
+   line-height: 1;
+   color: #999;
+   float: right;
+   margin-top: -10px;
+ }
+
+ .button{
+   background-color: #fafafa;
+   border: 1px solid #d0d0d0;
+   color: #5079d9;
+   padding: 5px 32px;
+   text-align: center;
+   font-size: 14px;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+
+ .footer-allfont{
+   align-items: center;
+   margin-top: 100px;
+ }
+
+ .footer-font-bottom{
+   float: left;
+   line-height: 12px;
+   color: #bdbdbd;
+   padding: 0 10px;
+   font-size: 12px;
+ }
 //关于商店和隐私条款的内容高度
  .page-height{
    height: 200px;
+ }
+
+//取消列表前面的圆点
+ li
+ {
+ list-style: none;
  }
