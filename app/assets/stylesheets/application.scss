@@ -83,17 +83,24 @@ color: #F5F5F5; //字体颜色
 //footer背景颜色
   .footer-container{
     background-color: #fafafa;
-    height: 340px;
-    margin-top: 340px;
+    height: 338px;
+    margin-top: 338px;
   }
 
 //footer文字样式
+
+  .footer-allfont{
+    align-items: center;
+    margin-top: 100px;
+  }
+
   .footer-font-left{
-    margin-top: 40px;
-    word-spacing: 80px;
+    margin-top: 46px;
+    word-spacing: 87px;
     font-size: 12px;
     float: left;
     line-height: 25px;
+    padding: 7px 0
   }
 
  .footer-font-right{
@@ -105,6 +112,7 @@ color: #F5F5F5; //字体颜色
    position: relative;
    color: #5079d9;
    font-size: 18px;
+   font-weight: 600;
    line-height: 1;
    cursor: default;
  }
@@ -136,10 +144,6 @@ color: #F5F5F5; //字体颜色
    border-radius: 5px;
  }
 
- .footer-allfont{
-   align-items: center;
-   margin-top: 100px;
- }
 
  .footer-font-bottom{
    float: left;
@@ -148,6 +152,7 @@ color: #F5F5F5; //字体颜色
    padding: 0 10px;
    font-size: 12px;
  }
+
 //关于商店和隐私条款的内容高度
  .page-height{
    height: 200px;
