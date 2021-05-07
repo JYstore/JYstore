@@ -80,114 +80,93 @@ color: #F5F5F5; //字体颜色
     border-color: transparent;}
 
 
-//轮播图样式
-  .carouselstyle{
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        ul{
-            list-style: none;
-        }
-
-        /**
-         * 轮播图布局样式
-         */
-
-        /**
-         * 0、轮播图容器
-         */
-        #container{
-            position: relative;
-            width: 1300px;
-            height: 550px;
-            margin: 50px auto;
-            overflow: hidden;
-        }
-
-        /**
-         * 1、图片(模拟)
-         */
-        ul#imgs{
-            position: absolute;
-            width: calc(1300px * 7);
-            left: -1300px;
-        }
-        ul#imgs li{
-            float: left;
-            width: 1300px;
-            height: 550px;
-
-            background-color: #42B983;
-            color: white;
-            text-align: center;
-            line-height: 550px;
-            font-size: 100px;
-
-        }
-
-        #imgs img {
-            max-width: 100%;
-            max-height: 100%;
-            width: 1300px;
-            display: block;
-            margin: auto;
-        }
-
-        #imgs li:nth-child(odd){
-            /* 模拟图片 */
-            /*background-color: #9ACD32;*/
-        }
-
-        /**
-         * 2、前后翻页按钮
-         */
-        /* #prev,#next{
-            position: absolute;
-            top: calc(50% - 15px);;
-            width: 40px;
-            height: 30px;
-            background-color: yellow;
-            border: none;
-            font-weight: bold;
-            font-size: 16px;
-            cursor: pointer;
-            opacity: .6;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        #prev,#next:focus{
-            outline: none;
-        }
-        #prev{
-            left: 10px;
-        }
-        #next{
-            right: 10px;
-        } */
-
-        /**
-         * 3、小圆点定点翻页
-         */
-        ul#index{
-            position: absolute;
-            top: 460px;
-            left: calc(50% - 55px);
-            height: 12px;
-        }
-        ul#index li{
-            float: left;
-            height: 12px;
-            width: 12px;
-            margin: 0 5px;
-            border-radius:50%;
-            background-color: #BDBDBD;
-            opacity: .4;
-            cursor: pointer;
-        }
-        ul#index li.active{
-            opacity: 1;
-        }
+//footer背景颜色
+  .footer-container{
+    background-color: #fafafa;
+    height: 338px;
+    margin-top: 338px;
   }
+
+//footer文字样式
+
+  .footer-allfont{
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .footer-font-left{
+    margin-top: 46px;
+    word-spacing: 87px;
+    font-size: 12px;
+    float: left;
+    line-height: 25px;
+    padding: 7px 0;
+  }
+
+ .footer-font-right{
+   margin-top: 61px;
+   float: right;
+ }
+
+ .footer-font-big{
+   float: right;
+   position: relative;
+   color: #5079d9;
+   font-size: 17.5px;
+   font-weight: 550;
+   line-height: 1;
+   cursor: default;
+   letter-spacing: -0.5px;
+ }
+
+ .footer-font-small{
+   font-size: 12px;
+   line-height: 1;
+   color: #999;
+   margin-top: -25px;
+   text-align: right;
+   font-weight: 330;
+ }
+
+ .footer-font-small-bottom{
+   font-size: 12px;
+   line-height: 1;
+   color: #999;
+   float: right;
+   margin-top: -10px;
+   font-weight: 340;
+ }
+
+ .button-default{
+   background-color: #fafafa;
+   border: 1px solid #d0d0d0;
+   color: #5079d9;
+   padding: 5px 36px;
+   text-align: center;
+   font-size: 12px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-top: -10px;
+   font-weight: 520;
+ }
+
+
+ .footer-font-bottom{
+   float: left;
+   line-height: 12px;
+   color: #bdbdbd;
+   padding: 0;
+   margin-top: 14px;
+   font-size: 12px;
+ }
+
+//关于商店和隐私条款的内容高度
+ .page-height{
+   height: 200px;
+ }
+
+//取消列表前面的圆点
+ li
+ {
+ list-style: none;
+ }
