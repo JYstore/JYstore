@@ -18,6 +18,8 @@
 @import 'bootstrap/scss/bootstrap';
 @import "font-awesome";
 
+//设置所有页面的背景颜色
+  body{ background:#ededed}
 
 //导航栏logo样式
   .navbar-brand > img {
@@ -78,6 +80,8 @@ color: #F5F5F5; //字体颜色
 //去除白色边框
   .navbar-default {
     border-color: transparent;}
+
+
 
 
 //footer背景颜色
@@ -170,3 +174,26 @@ color: #F5F5F5; //字体颜色
  {
  list-style: none;
  }
+
+ //卡片主体内容
+     .card{
+         margin-left: -1px;
+         margin-top: -1px;
+         padding:20px;
+         width: 305px;
+         height: 429px;
+         border-right: 1px solid #efefef;
+         border-bottom: 1px solid #efefef;
+         border-radius: initial;
+         background-color: #fff;
+         -webkit-transition: -webkit-box-shadow .15s ease-out;
+         transition: -webkit-box-shadow .15s ease-out;
+         transition: box-shadow .15s ease-out;
+         transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
+         border-radius: 0px;
+         display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
+         vertical-align: top;//高度对齐
+         text-align: center;
+         cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
+         overflow: hidden;
+     }
