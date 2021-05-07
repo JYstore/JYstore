@@ -7,6 +7,7 @@
       <div class="row">
         <% @products.each do |product| %>
           <div class="col-xs-12 col-xs-3">
+            <div class="fathercard">
             <div class="card">
             <%= link_to product_path(product) do %>
               <% if product.image.present? %>
@@ -31,6 +32,7 @@
                    ￥<%= product.price %>.00
                 </div>
               </ol>
+            </div>
             </div>
           </div>
         <% end %>
