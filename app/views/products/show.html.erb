@@ -1,37 +1,109 @@
-<br><br>
-<div class="container-fluid">
-  <div class="product-top">
-    <%= link_to("商城首页", root_path, class: "show-link") %>  /  <%= link_to("商品列表", products_path, class: "show-link") %>  /  <%= @product.title %>
-  </div>
-  <div class="product-image">
-    <div class="col-md-12">
-      <% if @product.image.present? %>
-        <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
-      <% else %>
-        <%= image_tag("http://placehold.it/595x396&text=No Pic", class: "thumbnail") %>
-      <% end %>
+
+<div class="product-top mt-4">
+  <%= link_to("商城首页", root_path, class: "show-link") %>  /  <%= link_to("商品列表", products_path, class: "show-link") %>  /  <%= @product.title %>
+</div>
+
+<div class="row product-show">
+  <div class="col-6">
+    <div class="product-image">
+        <% if @product.image.present? %>
+          <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
+        <% else %>
+          <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+        <% end %>
     </div>
   </div>
-  <div class="product-font">
-      <h2> <%= @product.title %> </h2>
-      <div>
-        数量 : <%= @product.quantity %>
-      </div>
-      <div class="product-price">
-         ￥ <%= @product.price %>
-      </div>
-      <div>
-        <% if @product.quantity > 0 %>
-          <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, :class => "btn btn-primary btn-lg btn-danger") %>
-        <% else %>
-          已销售一空，无法购买
-        <% end %>
-      </div>
-  </div>
-  <div class="product-description">
-    <hr>
-    <p>
-      <%= @product.description %>
-    </p>
+  <div class="col-6">
+    <div class="product-font">
+        <div class="product-title">
+            <%= @product.title %>
+        </div>
+        <div class="product-price">
+           ￥<%= @product.price %>
+        </div>
+        <div class="product-postage">
+           邮费:
+          <span class="product-postage-free">免费</span>
+        </div>
+        <div class="product-instalment">
+          低至 ¥25.15/月 x 24 期，支持花呗分期、京东白条、掌上生活分期付款
+          <br>
+          <a href="https://store.dji.com/cn/installments" style="color:#1890ff">分期常见问题 ></a>
+        </div>
+        <hr>
+        <div class="product-quantity">
+          数量 : <%= @product.quantity %>
+        </div>
+        <hr>
+        <div class="product-button">
+          <% if @product.quantity > 0 %>
+            <%= link_to("加入购物车", add_to_cart_product_path(@product), :method => :post, class: "btn btn-primary btn-primary-custom") %>
+          <% else %>
+            已销售一空，无法购买
+          <% end %>
+        </div>
+        <div class="product-delivery">
+          预计发货时间:订单付款后1个工作日
+        </div>
+    </div>
   </div>
 </div>
+<div class="product-description-title">
+  产品概览
+</div>
+  <hr class="hr-top">
+<div class="row product-description-style col-11">
+  <div class="col-3">
+    概述
+  </div>
+    <div class="col-8">
+      <div class="product-description">
+      <%= simple_format(@product.description) %>
+      </div>
+    </div>
+</div>
+    <hr class="hr-bottom">
+<div class="row product-description-style col-11">
+  <div class="col-3">
+    概述
+  </div>
+    <div class="col-8">
+      <div class="product-description">
+      <%= simple_format(@product.description) %>
+      </div>
+    </div>
+</div>
+    <hr class="hr-bottom">
+<div class="row product-description-style col-11">
+  <div class="col-3">
+    概述
+  </div>
+    <div class="col-8">
+      <div class="product-description">
+      <%= simple_format(@product.description) %>
+      </div>
+    </div>
+</div>
+    <hr class="hr-bottom">
+<div class="row product-description-style col-11">
+  <div class="col-3">
+    概述
+  </div>
+    <div class="col-8">
+      <div class="product-description">
+      <%= simple_format(@product.description) %>
+      </div>
+    </div>
+</div>
+    <hr class="hr-bottom">
+<div class="row product-description-style col-11">
+  <div class="col-3">
+    概述
+  </div>
+    <div class="col-8">
+      <div class="product-description">
+      <%= simple_format(@product.description) %>
+      </div>
+    </div>
+</div>
+    <hr class="hr-bottom">
