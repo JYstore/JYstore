@@ -87,3 +87,50 @@ body{ background:white !important }
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
+
+   //商品展示页面的最上面文字样式
+   .product-top{
+     display: flex;
+     text-transform: capitalize;
+     vertical-align: baseline;
+     line-height: 12px;
+     color: #ccc;
+     letter-spacing: 0.1px;
+     padding: 0;
+     margin-top: -18px;
+     margin-left: -60px;
+     font-size: 12px;
+     font-weight: 400;
+     white-space: pre;
+   }
+
+   //商品展示页面的链接样式
+   .show-link{
+    color:#707473;
+   }
+
+   //商品页面主体文字
+   .product-font{
+     text-align: right;
+     margin-top: 100px;
+     margin-right: 200px;
+   }
+
+   //商品页面图片样式
+   .product-image{
+     margin-top:-8px;
+     margin-left: -60px;
+     float:left;
+   }
+
+   //商品页面商品描述
+   .product-description{
+     height: 100px;
+     margin-top: 500px;
+   }
+
+
+    .thumbnail{
+      height: 396px;
+      width: 595px;
+    }
