@@ -94,7 +94,6 @@
       position: relative;
       border-radius: 6px;
       padding: 0px;
-      border: 1px solid #E0E0E0;
       overflow: hidden;
     }
 
@@ -104,10 +103,8 @@
       background: #777;
       color: #ffffff;
       position: relative;
-      border-radius: 6px;
       padding: 0px;
       margin-left: -39px;
-      border: 1px solid #E0E0E0;
       overflow: hidden;
 
     }
@@ -124,4 +121,6 @@
      height: 553px;
      width: 1218px;
      margin-bottom: -45px;
+     border-radius: 6px;
+     overflow: hidden;
    }
