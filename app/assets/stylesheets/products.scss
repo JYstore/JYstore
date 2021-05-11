@@ -85,3 +85,24 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
+
+    .carousel-item{
+      height: 553px;
+      width: 1218px;
+      background: #777;
+      color: #ffffff;
+      position: relative;
+      border-radius: 6px;
+      padding: 0px;
+      max-width: 100%;
+      max-height: 100%;
+      border: 1px solid #E0E0E0;
+      overflow: hidden;
+    }
+
+
+    .carousel-inner{
+      .container{
+        padding: 0px;
+      }
+    }
