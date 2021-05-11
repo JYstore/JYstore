@@ -3,20 +3,104 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 //购物车的卡片
- .cart-bigcard{
-     padding: 15px;
-     margin-left: 0px;
-     margin-top: 40px;
-     background-color: white;
-     border-radius: 0px;
-     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
-     display: flex;
-     vertical-align: top;
-     width: 1200px;
-     flex-direction: column;
+ .cart-box{
+   margin-top: 30px;
+   margin-left: -55px;
+   background-color: white;
+   border-radius: 8px;
+   width: 1218px;
+   position: relative;
+   border: 1px solid rgba(0,0,0,.14);
+   overflow: hidden
  }
 
-//购物车表格内容垂直居中
-  .cart-bigcard td  {
-    vertical-align: middle;
-}
+//购物清单那一行
+ .cart-title{
+   position: relative;
+   z-index: 10;
+   height: 60px;
+   padding: 0 10px 0 30px;
+   border-bottom: 1px solid #dbdbdb;
+   border-radius: 8px 8px 0 0;
+   background: #fafafa;
+   line-height: 60px;
+   font-size: 18px;
+   color: rgba(0,0,0,.6);
+   margin-bottom: -1px;
+ }
+
+//商品信息那一行
+ .cart-table-title{
+   position: relative;
+   z-index: 1;
+   padding: 10px 10px;
+   font-size: 12px;
+   font-weight: 400;
+   background: #f5f5f5;
+   border-bottom: 1px solid #dbdbdb;
+   border-bottom-color: rgba(0, 0, 0, 0.08);
+   color: #838383;
+   margin-bottom: -1px;
+ }
+
+ .name{
+  padding-left: 20px;
+  padding-right: 600px;
+ }
+
+ .price{
+  padding-right: 100px;
+ }
+
+ .num{
+  padding-right: 100px;
+ }
+
+ .subtotal{
+  padding-right: 100px;
+ }
+
+ .operation{
+
+ }
+
+ .cart-table{
+
+ }
+
+ .cart-group{
+
+ }
+
+ .cart-box-image .thumbnail{
+   height: 80px;
+   width: 80px;
+   border: 1px solid #dbdbdb;
+   border-radius: 5px;
+ }
+
+ .cart-box-image{
+  padding-left: 74px;
+  padding-top: 30px;
+ }
+
+ .cart-name{
+  padding-left: 20px;
+
+ }
+
+ .cart-price{
+
+ }
+
+ .cart-num{
+
+ }
+
+ .cart-subtotal{
+
+ }
+
+ .cart-operation{
+
+ }

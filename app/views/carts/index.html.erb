@@ -1,58 +1,53 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="cart-bigcard">
-   <table class="table">
-    <h2> 购物车 </h2>
-    <%= link_to("清空购物车", clean_carts_path ,
-                method: :delete , class: "pull-right",
-                style: "text-decoration: underline;",
-                data: { confirm: "你确定要清空整个购物车吗？"} )%>
-      <thead>
-        <tr class="active">
-          <th colspan="2">商品资讯</th>
-          <th>单价</th>
-          <th>数量</th>
-          <th>小计</th>
-          <th>操作选项 </th>
-        </tr>
-      </thead>
-      <tbody>
+<div class="col-md-12">
+    <div class="cart-box">
+    <h2 class="cart-title"> 购物清单 </h2>
+        <div class="cart-table-title">
+          <span class="name">商品信息</span>
+          <span class="price">单价</span>
+          <span class="num">数量</span>
+          <span class="subtotal">小计</span>
+          <span class="operation">操作选项 </span>
+        </div>
 
-        <% current_cart.cart_items.each do |cart_item| %>
-          <tr>
-            <td>
+        <div class="cart-table">
+         <div class="cart-group">
+          <% current_cart.cart_items.each do |cart_item| %>
+            <div class="cart-box-image">
               <%= link_to product_path(cart_item.product) do %>
                 <% if cart_item.product.image.present? %>
                   <%= image_tag(cart_item.product.image.thumb.url, class: "thumbnail") %>
                 <% else %>
-                  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+                  <%= image_tag("http://placehold.it/80x80&text=No Pic", class: "thumbnail") %>
                 <% end %>
               <% end %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-name">
               <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-price">
                 ¥ <%= cart_item.product.price %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-num">
               <%= form_for cart_item, url: cart_item_path(cart_item.product_id) do |f| %>
                 <%= f.select :quantity, 1..cart_item.product.quantity %>
                 <%= f.submit "更新", data: { disable_with: "Submiting..." } %>
               <% end %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-subtotal">
                 ¥ <%= cart_item.quantity * cart_item.product.price %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-operation">
               <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
                 <i class="fa fa-times-circle-o"></i>
               <% end %>
-            </td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+            </div>
+
+            <div class="warranty">
+            </div>
+           <hr>
+          <% end %>
+         </div>
+        </div>
 
     <br>
 
@@ -74,5 +69,4 @@
       <% end %>
       </div>
     </div>
-  </div>
 </div>
