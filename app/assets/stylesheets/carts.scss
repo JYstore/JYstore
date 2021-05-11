@@ -1,3 +1,22 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+//购物车的卡片
+ .cart-bigcard{
+     padding: 15px;
+     margin-left: 0px;
+     margin-top: 40px;
+     background-color: white;
+     border-radius: 0px;
+     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
+     display: flex;
+     vertical-align: top;
+     width: 1200px;
+     flex-direction: column;
+ }
+
+//购物车表格内容垂直居中
+  .cart-bigcard td  {
+    vertical-align: middle;
+}

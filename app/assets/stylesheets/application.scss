@@ -86,27 +86,6 @@ color: #F5F5F5; //字体颜色
    background-color: white;
  }
 
-<<<<<<< HEAD
-//购物车的卡片
- .cart-bigcard{
-     padding: 15px;
-     margin-left: 0px;
-     margin-top: 40px;
-     background-color: white;
-     border-radius: 0px;
-     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);
-     display: flex;
-     vertical-align: top;
-     width: 1200px;
-     flex-direction: column;
- }
-
-//购物车表格内容垂直居中
-  .cart-bigcard td  {
-    vertical-align: middle;
-}
-=======
-
 
 //footer背景颜色
   .footer-container{
@@ -221,4 +200,3 @@ color: #F5F5F5; //字体颜色
          cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
          overflow: hidden;
      }
->>>>>>> develop
