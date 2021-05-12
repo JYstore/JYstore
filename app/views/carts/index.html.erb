@@ -5,12 +5,12 @@
           <span class="price">单价</span>
           <span class="num">数量</span>
           <span class="subtotal">小计</span>
-          <span class="operation">操作选项 </span>
+          <span class="operation">操作</span>
         </div>
 
         <div class="cart-table">
-         <div class="cart-group">
           <% current_cart.cart_items.each do |cart_item| %>
+          <div class="cart-group">
             <div class="cart-box-image">
               <%= link_to product_path(cart_item.product) do %>
                 <% if cart_item.product.image.present? %>
@@ -21,10 +21,10 @@
               <% end %>
             </div>
             <div class="cart-name">
-              <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
+              <%= link_to(cart_item.product.title, product_path(cart_item.product), class: "cart-title-custom") %>
             </div>
             <div class="cart-price">
-                ¥ <%= cart_item.product.price %>
+                ¥ <%= cart_item.product.price %>.00
             </div>
             <div class="cart-num">
               <%= form_for cart_item, url: cart_item_path(cart_item.product_id) do |f| %>
@@ -33,38 +33,35 @@
               <% end %>
             </div>
             <div class="cart-subtotal">
-                ¥ <%= cart_item.quantity * cart_item.product.price %>
+                ¥ <%= cart_item.quantity * cart_item.product.price %> .00
             </div>
             <div class="cart-operation">
               <%= link_to cart_item_path(cart_item.product_id), method: :delete do %>
                 <i class="fa fa-times-circle-o"></i>
               <% end %>
             </div>
-
-            <div class="warranty">
-            </div>
-           <hr>
+          </div>
+          <div class="warranty">
+            购买 Smartisan TNT go 保修服务，折算后每天仅需0.41元。
+          </div>
           <% end %>
-         </div>
         </div>
-
-    <br>
-
-    <div class="total clearfix">
-      <span class="pull-right">
-         <span>
-            总计 <%= render_cart_total_price(current_cart) %> RMB
-         </span>
+  <div class="cart-bottom">
+      <span>
+        <% if current_cart.total_price > 0 %>
+          <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn-primary-cart pull-right") %>
+        <% else %>
+          <%= link_to("添加商品", products_path, method: :get, class: "btn-primary-cart pull-right") %>
+        <% end %>
       </span>
-    </div>
-
-    <hr>
-
-    <div class="checkout clearfix">
-      <% if current_cart.total_price > 0 %>
-        <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn btn-lg btn-primary pull-right") %>
-      <% else %>
-        <%= link_to("添加商品", products_path, method: :get, class: "btn btn-lg btn-primary pull-right") %>
-      <% end %>
-    </div>
+     <div class="bottom-font pull-right">
+      <span class="bottom-total">
+            应付总额: <span class="bottom-num">￥<%= render_cart_total_price(current_cart) %>.00</span>
+      </span>
+      <br>
+      <span class="bottom-total-detail">
+            应付总额不含运费
+      </span>
+     </div>
+  </div>
 </div>
