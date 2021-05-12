@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   resources :products do
     collection do
       get :welcome_show
-    end 
+    end
     member do
       post :add_to_cart
     end
@@ -49,7 +49,9 @@ Rails.application.routes.draw do
   end
 
   namespace :account do
-    resources :orders
+    resources :orders do
+      resources :products
+    end 
   end
 
   resources :services
