@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_28_030025) do
+ActiveRecord::Schema.define(version: 2021_05_10_122656) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "title"
@@ -81,6 +81,11 @@ ActiveRecord::Schema.define(version: 2021_04_28_030025) do
     t.string "image"
     t.boolean "is_hidden", default: true
     t.integer "category_id"
+    t.text "description_detail"
+    t.text "advantage"
+    t.text "repertoire"
+    t.text "technical_parameters"
+    t.text "adaptive"
   end
 
   create_table "services", force: :cascade do |t|

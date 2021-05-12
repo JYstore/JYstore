@@ -11,11 +11,31 @@
   </div>
 
   <div class="group">
+    <%= f.input :description_detail %>
+  </div>
+
+  <div class="group">
     <%= f.input :quantity %>
   </div>
 
   <div class="group">
     <%= f.input :price %>
+  </div>
+
+  <div class="group">
+    <%= f.input :advantage %>
+  </div>
+
+  <div class="group">
+    <%= f.input :repertoire %>
+  </div>
+
+  <div class="group">
+    <%= f.input :technical_parameters %>
+  </div>
+
+  <div class="group">
+    <%= f.input :adaptive %>
   </div>
 
   <% if @product.image.present? %>
