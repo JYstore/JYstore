@@ -1,0 +1,2 @@
+module Account::ProductListsHelper
+end

@@ -7,11 +7,17 @@
       </tr>
     </thead>
     <tbody>
-      <% @products.each do |product| %>
+      <% @product_lists.each do |product_list| %>
         <tr>
-          <td><%= product.content %></td>
-          <td><%= product.user.email %></td>
-          <td><%= product.created_at %></td>
+          <td>
+            <%= product_list.product_name %>
+          </td>
+          <td>
+            <%= product_list.product_price %>
+          </td>
+          <td>
+            <%= product_list.quantity %>
+          </td>
         </tr>
       <% end %>
     </tbody>

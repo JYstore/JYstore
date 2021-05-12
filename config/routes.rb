@@ -24,6 +24,7 @@ Rails.application.routes.draw do
       post :pay_with_wechat
       post :apply_to_cancel
     end
+    resources :product_list
   end
 
   resources :carts do
@@ -49,9 +50,10 @@ Rails.application.routes.draw do
   end
 
   namespace :account do
+    resources :product_lists
     resources :orders do
       resources :products
-    end 
+    end
   end
 
   resources :services
