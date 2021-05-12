@@ -30,6 +30,104 @@ body{ background:white !important }
 }
 
 //改变卡片文字格式
+<<<<<<< HEAD
+    .card .title {
+      margin-right: 25px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+    }
+    .card .description {
+      margin-right: 25px;
+      padding: 0 12px 0;
+      font-size: 12px;
+      color: #999;
+    }
+    .card .price {
+      font-family: Arial;
+      color: #d44d44;
+      font-size: 18px;
+      margin-right: 35px;
+      font-weight: bolder;//加粗字体
+      -webkit-transition: all .1s ease-out;
+      transition: all .1s ease-out;
+    }
+
+    .bigcard{
+        padding-left: 15px;
+        margin-left: -70px;
+        margin-bottom: 0px;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        vertical-align: top;
+        width: 1218px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        border: 1px solid rgba(0,0,0,.14);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden
+    }
+
+    .cardname{
+      display: flex;
+      font-size: 0.83em;
+      margin-block-start: 1.67em;
+      margin-block-end: 1.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      margin-left: 25px;
+      font-weight: bolder;
+      font-size: 18px;
+      color: #666;
+      line-height: 10px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .carousel-item{
+      height: 553px;
+      width: 1218px;
+      background: #777;
+      color: #ffffff;
+      position: relative;
+      border-radius: 6px;
+      padding: 0px;
+      overflow: hidden;
+    }
+
+    .carousel-item img{
+      height: 553px;
+      width: 1218px;
+      background: #777;
+      color: #ffffff;
+      position: relative;
+      padding: 0px;
+      margin-left: -39px;
+      overflow: hidden;
+
+    }
+
+    .carousel-inner{
+      .container{
+        padding: 0px;
+      }
+    }
+
+   #carouselExampleControls{
+     display: flex;
+     margin-left: -55px;
+     height: 553px;
+     width: 1218px;
+     margin-bottom: -45px;
+     border-radius: 6px;
+     overflow: hidden;
+   }
+=======
 .card .title {
   margin-right: 25px;
   font-size: 14px;
@@ -227,3 +325,4 @@ flex-direction: row
  width: 1200px;
  margin-left: -45px;
 }
+>>>>>>> develop

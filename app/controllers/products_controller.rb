@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
+  def welcome_show
+    @products = Product.where(:is_hidden => false)
+  end 
+
   def add_to_cart
     @product = Product.find(params[:id])
     if !current_cart.products.include?(@product)

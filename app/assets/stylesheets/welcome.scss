@@ -1,9 +1,36 @@
-
-
 .carousel-item{
-  height: 32rem;
+  height: 553px;
+  width: 1218px;
   background: #777;
   color: #ffffff;
   position: relative;
   border-radius: 6px;
+  padding: 0px;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid #E0E0E0;
+  overflow: hidden;
+}
+
+
+.carousel-inner{
+  .container{
+    padding: 0px;
+  }
+}
+
+.image-title{
+  position: absolute;
+  top: 6%;
+  left: 3%;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.image-description{
+  position: absolute;
+  top: 14%;
+  left: 3%;
+  color: black;
 }

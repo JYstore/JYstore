@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root 'products#welcome_show'
   devise_for :users
 
   namespace :admin do
@@ -34,6 +34,9 @@ Rails.application.routes.draw do
   end
 
   resources :products do
+    collection do
+      get :welcome_show
+    end 
     member do
       post :add_to_cart
     end
