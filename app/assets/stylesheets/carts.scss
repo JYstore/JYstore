@@ -1,3 +1,237 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+ //购物车的卡片
+ .cart-box{
+  margin-top: 30px;
+  margin-left: -55px;
+  background-color: white;
+  border-radius: 8px;
+  width: 1218px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.14);
+  overflow: hidden
+ }
+
+ //购物清单那一行
+ .cart-title{
+  position: relative;
+  z-index: 10;
+  height: 60px;
+  padding: 0 10px 0 30px;
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: 8px 8px 0 0;
+  background: #fafafa;
+  line-height: 60px;
+  font-size: 18px;
+  color: rgba(0,0,0,.6);
+  margin-bottom: -1px;
+ }
+
+ //商品信息那一行
+ .cart-table-title{
+  position: relative;
+  z-index: 1;
+  padding: 10px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  background: #f5f5f5;
+  border-bottom: 1px solid #dbdbdb;
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+  color: #838383;
+  margin-bottom: -1px;
+ }
+
+ .name{
+  padding-left: 20px;
+  padding-right: 645px;
+ }
+
+ .price{
+  padding-right: 110px;
+ }
+
+ .num{
+  padding-right: 110px;
+ }
+
+ .subtotal{
+  padding-right: 110px;
+ }
+
+ .operation{
+
+ }
+
+ .cart-table{
+
+ }
+
+ .cart-group{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+ }
+
+ .cart-group::before{
+  content: " ";
+  position: absolute;
+  height: 1px;
+  right: 0;
+  bottom: 0;
+  left:0;
+  width:1145px;
+  margin-left: 75px;
+  background-color: #E9E9E9;
+  border: 1rpx solid lightgray;
+  margin-bottom: 120px;
+ }
+
+ .cart-group:first-child::before {
+  display: none;
+ }
+
+ .cart-box-image .thumbnail{
+  height: 80px;
+  width: 80px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+ }
+
+ .cart-box-image{
+  padding-left: 74px;
+ }
+
+ .cart-name{
+  padding-left: 20px;
+  width: 520px;
+  margin-bottom: 20px;
+ }
+
+ .cart-title-custom{
+   color: #333;
+   font-size: 16px;
+   font-weight: 700;
+   text-decoration: none;
+ }
+
+ .cart-price{
+  width: 137px;
+  margin-right: 20px;
+  padding-left: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+ }
+
+ .cart-num{
+  width: 137px;
+  text-align: center;
+ }
+
+ .cart-subtotal{
+  width: 137px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+ }
+
+ .cart-operation{
+  text-align: center;
+  width: 137px;
+  font-size: 30px;
+ }
+
+ //保修服务
+ .warranty{
+  position: relative;
+  background: #fafafa;
+  width:1115px;
+  margin-left: 75px;
+  height: 80px;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-left: 120px;
+ }
+
+ //制作三角形,变成对话框样式
+ .warranty::before{
+  content: ""; //制作一个新内容,内容为空
+  border-top: solid 0px pink; //新内容的顶部大小为0
+  border-left: solid 7px #00800000; //新内容的左x轴长度,颜色为跟随/空白
+  border-right: solid 7px #00800000; //新内容的右x轴长度
+  border-bottom: solid 10px #f0f0f0; //新内容的底部长度
+  position: absolute;
+  left: 3%; //三角形位置
+  bottom: 100%; //三角形位置
+ }
+
+ //给三角形添加边框
+ .warranty::after{
+   content: ""; //制作一个新内容,内容为空
+   border-top: solid 0px pink; //新内容的顶部大小为0
+   border-left: solid 7px #00800000; //新内容的左x轴长度,颜色为跟随/空白
+   border-right: solid 7px #00800000; //新内容的右x轴长度
+   border-bottom: solid 10px #fafafa; //新内容的底部长度
+   position: absolute;
+   left: 3%; //三角形位置
+   bottom: 99%; //三角形位置
+  }
+
+ //分割线样式
+ .hr-style{
+  margin-top:30px;
+  width:1115px;
+  margin-left: 75px;
+ }
+
+ //底部样式
+ .cart-bottom{
+  height: 80px;
+  border-top: 1px solid #efefef;
+  margin-top: 50px;
+  padding-top: 17px;
+ }
+
+ .bottom-font{
+  width:160px;
+ }
+
+ .bottom-total{
+  font-size: 14px;
+  font-weight: 400;
+ }
+
+ .bottom-num{
+  color: #d44d44;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5em;
+ }
+
+ .bottom-total-detail{
+  color: #959595;
+  font-size: 14px;
+  font-weight: 400;
+ }
+
+ //结账按钮样式
+ .btn-primary-cart{
+  width: 128px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 14px;
+  color: #fff;
+  background: #567ce6 linear-gradient(#799cea,#567ce6);
+  border-radius: 9px;
+  margin-right: 25px;
+ }
