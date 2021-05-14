@@ -2,61 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-//左边的表格
-//个人资料卡片
-.order-personal-data{
- margin-left: -54px;
- margin-top: 21px;
- background-color: white;
- border-radius: 8px;
- width: 210px;
- height: 493px;
- position: relative;
- border: 1px solid rgba(0,0,0,.14);
- overflow: hidden
-}
-
-//用户头像
-.user-head-image{
-  width: 168px;
-  height: 168px;
-  margin: 20px;
-}
-
-//用户头像图片样式
-.thumbnail-head{
-  height: 168px;
-  width: 168px;
-}
-
-//用户名样式
-.user-number{
- margin-top: -15px;
- width: 210px;
- text-align: center;
- height: 48px;
- line-height: 48px;
- font-weight: 600;
- font-size: 18px;
- color: #666;
-}
-
-//个人资料“我的订单”
-.user-my-order{
- text-align: center;
- display: block;
- height: 50px;
- line-height: 50px;
- border-top: 1px solid #ebebeb;
- font-size: 14px;
- color: #666;
-}
 
 //右边的表格
 //订单卡片
 .order-box{
  margin-top: 21px;
- margin-left: -108px;
+ margin-left: 100px;
  background-color: white;
  border-radius: 8px;
  width: 986px;

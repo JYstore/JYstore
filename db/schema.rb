@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2021_05_14_030902) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "product_image"
+    t.integer "user_id"
   end
 
   create_table "products", force: :cascade do |t|
