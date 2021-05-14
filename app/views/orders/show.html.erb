@@ -6,7 +6,7 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="80%">商品明细</th>
+          <th width="80%" colspan="2">商品明细</th>
           <th>单价</th>
         </tr>
       </thead>
@@ -14,6 +14,17 @@
 
         <% @product_lists.each do |product_list| %>
           <tr>
+            <td>
+             <div class="order-content-image">
+              <%= link_to products_path do %>
+               <% if product_list.product_image.present? %>
+                 <%= image_tag(product_list.product_image, class: "thumbnail") %>
+               <% else %>
+                 <%= image_tag("http://placehold.it/80x80&text=No Pic", class: "thumbnail") %>
+               <% end %>
+              <% end %>
+             </div>
+            </td>
             <td>
               <%= product_list.product_name %>
             </td>
