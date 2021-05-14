@@ -19,15 +19,17 @@
 @import "font-awesome";
 
 //设置所有页面的背景颜色
-  body{ background:#ededed}
+body{
+  background:#ededed
+}
 
 //导航栏logo样式
-  .navbar-brand > img {
-      display: inline-block; //图片和链接文字显示在同一行
-      margin-right: 10px; //图片和链接文字拉开一点距离
-      width: 32px; //定制图片宽度
-      height: 25px; //定制图片高度
-  }
+.navbar-brand > img {
+  display: inline-block; //图片和链接文字显示在同一行
+  margin-right: 10px; //图片和链接文字拉开一点距离
+  width: 32px; //定制图片宽度
+  height: 25px; //定制图片高度
+}
 
 //导航栏背景颜色
 .navbar-backgroundcolor{
@@ -36,86 +38,80 @@
 
 //导航栏字体颜色
 .navbar-default .navbar-brand {
-color: #F5F5F5; //字体颜色
-
+  color: #F5F5F5; //字体颜色
 }
 
 //导航栏链接颜色
- .navbar-default .navbar-nav > li > a{
-   color: #F5F5F5;
+.navbar-default .navbar-nav > li > a{
+  color: #F5F5F5;
 
  }
 
  //鼠标放在链接上的颜色
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-    color: #FF6F00;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF6F00;
+  background-color: transparent;
+ }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FF6F00;
+  background-color: #FFE0B2;
+ }
 
-    background-color: transparent;
-  }
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #FF6F00;
-
-    background-color: #FFE0B2;
-
-  }
-
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > .open > a:hover {
-    background-color: #FFE0B2;
-
-    color: #212121;
-  }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: #FFE0B2;
+  color: #212121;
+ }
 
 //去掉导航栏圆角
-  @media (min-width: 768px) {
-    .navbar {
-      border-radius: 0; //圆角为0
-    }
-  }
+@media (min-width: 768px) {
+.navbar {
+  border-radius: 0; //圆角为0
+ }
+ }
 
 //去除白色边框
-  .navbar-default {
-    border-color: transparent;}
+.navbar-default {
+  border-color: transparent;}
 
 //购物车镶嵌板背景颜色
-  .panel-default .panel-heading{
-   background-color: white;
- }
+.panel-default .panel-heading{
+  background-color: white;
+}
 
 
 //footer背景颜色
-  .footer-container{
-    background-color: #fafafa;
-    height: 338px;
-    margin-top: 338px;
-  }
+.footer-container{
+  background-color: #fafafa;
+  height: 338px;
+  margin-top: 338px;
+}
 
 //footer文字样式
+.footer-allfont{
+  align-items: center;
+  margin-top: 100px;
+}
 
-  .footer-allfont{
-    align-items: center;
-    margin-top: 100px;
-  }
+.footer-font-left{
+  margin-top: 46px;
+  word-spacing: 87px;
+  font-size: 12px;
+  float: left;
+  line-height: 25px;
+  padding: 7px 0;
+}
 
-  .footer-font-left{
-    margin-top: 46px;
-    word-spacing: 87px;
-    font-size: 12px;
-    float: left;
-    line-height: 25px;
-    padding: 7px 0;
-  }
+.footer-font-right{
+  margin-top: 61px;
+  float: right;
+}
 
- .footer-font-right{
-   margin-top: 61px;
-   float: right;
- }
-
- .footer-font-big{
+.footer-font-big{
    float: right;
    position: relative;
    color: #5079d9;
@@ -174,30 +170,41 @@ color: #F5F5F5; //字体颜色
  }
 
 //取消列表前面的圆点
- li
- {
- list-style: none;
+  li{
+   list-style: none;
  }
 
  //卡片主体内容
-     .card{
-         margin-left: -1px;
-         margin-top: -1px;
-         padding:20px;
-         width: 305px;
-         height: 429px;
-         border-right: 1px solid #efefef;
-         border-bottom: 1px solid #efefef;
-         border-radius: initial;
-         background-color: #fff;
-         -webkit-transition: -webkit-box-shadow .15s ease-out;
-         transition: -webkit-box-shadow .15s ease-out;
-         transition: box-shadow .15s ease-out;
-         transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
-         border-radius: 0px;
-         display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
-         vertical-align: top;//高度对齐
-         text-align: center;
-         cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
-         overflow: hidden;
-     }
+ .card{
+   margin-left: -1px;
+   margin-top: -1px;
+   padding:20px;
+   width: 305px;
+   height: 429px;
+   border-right: 1px solid #efefef;
+   border-bottom: 1px solid #efefef;
+   border-radius: initial;
+   background-color: #fff;
+   -webkit-transition: -webkit-box-shadow .15s ease-out;
+   transition: -webkit-box-shadow .15s ease-out;
+   transition: box-shadow .15s ease-out;
+   transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
+   border-radius: 0px;
+   display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
+   vertical-align: top;//高度对齐
+   text-align: center;
+   cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
+   overflow: hidden;
+ }
+
+.devise-box{
+  margin-top: 30px;
+  margin-left: 200px;
+  background-color: white;
+  border-radius: 8px;
+  width: 400px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.14);
+  overflow: hidden;
+  padding: 30px;
+}
