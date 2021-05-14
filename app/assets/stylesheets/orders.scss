@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+//左边的表格
+//个人资料卡片
 .order-personal-data{
  margin-left: -54px;
  margin-top: 21px;
@@ -14,6 +16,43 @@
  overflow: hidden
 }
 
+//用户头像
+.user-head-image{
+  width: 168px;
+  height: 168px;
+  margin: 20px;
+}
+
+//用户头像图片样式
+.thumbnail-head{
+  height: 168px;
+  width: 168px;
+}
+
+//用户名样式
+.user-number{
+ margin-top: -15px;
+ width: 210px;
+ text-align: center;
+ height: 48px;
+ line-height: 48px;
+ font-weight: 600;
+ font-size: 18px;
+ color: #666;
+}
+
+//个人资料“我的订单”
+.user-my-order{
+ text-align: center;
+ display: block;
+ height: 50px;
+ line-height: 50px;
+ border-top: 1px solid #ebebeb;
+ font-size: 14px;
+ color: #666; 
+}
+
+//右边的表格
 //订单卡片
 .order-box{
  margin-top: 21px;
@@ -39,6 +78,7 @@
  font-size: 18px;
  color: #646464;
  margin-bottom: -1px;
+ box-shadow: 0px 1px 15px 0.1px rgba(0, 0, 0, 0.2);
 }
 
 //表格头部
@@ -64,7 +104,13 @@
 //订单号
 .order-num{
  width: 147px;
- padding-right: 379px;
+ padding-right: 10px;
+}
+
+//订单号码(实数)
+.order-number{
+ color: #5079d9;
+ padding-right: 369px;
 }
 
 //订单单价
@@ -99,6 +145,7 @@
  border-right: 1px solid rgba(0,0,0,.14);
 }
 
+//两个商品中间的分割线
 .order-table-content::before{
  content: " ";
  position: absolute;
@@ -113,6 +160,7 @@
  margin-bottom: 120px;
 }
 
+//取消掉第一个商品上面的分割线
 .order-table-content:first-child::before {
  display: none;
 }
@@ -152,15 +200,16 @@
  font-weight: 400;
 }
 
-//表格里商品总额
+//表格里商品总额卡片
 .order-total-state{
  float:right;
- margin-right: 45px;
+ margin-right: 20px;
  margin-top: 48px;
 }
 
+//表格里商品总额
 .order-content-total{
-  margin-right: 40px;
+  margin-right: 55px;
   font-weight: 600;
   color: #333;
   font-size: 14px;
@@ -168,4 +217,17 @@
 
 .order-total-detail{
  float:right;
+}
+
+//查看详情按钮
+.btn-detail{
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 12px;
+  cursor: pointer;
+  border-radius: 5px;
 }
