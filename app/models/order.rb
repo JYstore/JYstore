@@ -44,6 +44,7 @@ class Order < ApplicationRecord
    validates :shipping_address, presence: true
    validates :shipping_contact_information, presence: true
    has_many :product_lists
+   has_many :products
 
    def set_payment_with!(method)
      self.update_columns(payment_method: method )

@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 2021_05_14_030902) do
     t.text "repertoire"
     t.text "technical_parameters"
     t.text "adaptive"
+    t.integer "order_id"
   end
 
   create_table "services", force: :cascade do |t|

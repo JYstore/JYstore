@@ -3,10 +3,11 @@ class Account::OrdersController < ApplicationController
 
    def index
      @orders = current_user.orders.order("id DESC")
+     @product_lists = current_user.product_lists
    end
 
    def show
      @order = Order.find(params[:id])
      @product_lists = @order.product_lists
-   end   
+   end
 end
