@@ -61,6 +61,8 @@
     <div class="group pull-right">
       <%= link_to("去支付", payment_path(@order.token), :class => "btn btn-danger") %>
     </div>
+    <% elsif @order.order_cancelled? %>
+      <p class="text-center">此订单已取消</p>
     <% else %>
       <p class="text-center">此订单已完成付款,商品正在出库中</p>
     <% end %>
