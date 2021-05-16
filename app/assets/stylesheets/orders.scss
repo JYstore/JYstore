@@ -1,3 +1,183 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+//订单卡片
+.order-box{
+ margin-top: 21px;
+ margin-left: 100px;
+ background-color: white;
+ border-radius: 8px;
+ width: 986px;
+ position: relative;
+ border: 1px solid rgba(0,0,0,.14);
+ overflow: hidden;
+}
+
+//订单顶部
+.order-title{
+ position: relative;
+ z-index: 10;
+ height: 50px;
+ padding-left: 20px;
+ border-bottom: 1px solid #dbdbdb;
+ border-radius: 8px 8px 0 0;
+ background: linear-gradient(#fff,#f5f5f5);
+ line-height: 50px;
+ font-size: 18px;
+ color: #646464;
+ margin-bottom: -1px;
+ box-shadow: 0px 1px 15px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+//表格头部
+.order-table-title{
+ position: relative;
+ z-index: 1;
+ padding: 10px 10px;
+ font-size: 12px;
+ font-weight: 400;
+ background: #f5f5f5;
+ border-bottom: 1px solid #dbdbdb;
+ border-bottom-color: rgba(0, 0, 0, 0.08);
+ color: #838383;
+ margin-bottom: -1px;
+ border-top: 1px solid #dbdbdb;
+}
+
+//订单创建日期
+.order-date{
+ width: 120px;
+ padding-right: 60px;
+}
+
+//订单号
+.order-num{
+ width: 147px;
+ padding-right: 10px;
+}
+
+//订单号码(实数)
+.order-number{
+ color: #5079d9;
+ padding-right: 369px;
+}
+
+//订单单价
+.order-price{
+ padding-right: 78px;
+}
+
+//订单商品数量
+.order-quantity{
+ padding-right: 76px;
+}
+
+//订单应付金额
+.order-total-price{
+ padding-right: 50px;
+}
+
+//订单状态
+.order-state{
+
+}
+
+//表格内容
+.order-table-content{
+ position: relative;
+ display: flex;
+ align-items: center;
+ width: 720px;
+ padding-bottom: 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ border-right: 1px solid rgba(0,0,0,.14);
+}
+
+//两个商品中间的分割线
+.order-table-content::before{
+ content: " ";
+ position: absolute;
+ height: 1px;
+ right: 0;
+ bottom: 0;
+ left:0;
+ width:603px;
+ margin-left: 117px;
+ background-color: #E9E9E9;
+ border: 1rpx solid lightgray;
+ margin-bottom: 120px;
+}
+
+//取消掉第一个商品上面的分割线
+.order-table-content:first-child::before {
+ display: none;
+}
+
+//表格内容图片
+.order-content-image .thumbnail{
+ height: 80px;
+ width: 80px;
+ border: 1px solid #dbdbdb;
+ border-radius: 5px;
+}
+
+//表格里商品名称
+.order-content-name{
+ padding-left: 20px;
+ width: 390px;
+ margin-right: 50px;
+ color: #666;
+ font-size: 14px;
+ font-weight: 400;
+}
+
+//表格里商品单价
+.order-content-price{
+ width: 68.5px;
+ margin-right: 76px;
+ font-size: 14px;
+ font-weight: 400;
+ color: #333;
+ font-weight: 400;
+}
+
+//表格里商品数量
+.order-content-quantity{
+ color: #666;
+ font-size: 14px;
+ font-weight: 400;
+}
+
+//表格里商品总额卡片
+.order-total-state{
+ float:right;
+ margin-right: 20px;
+ margin-top: 48px;
+}
+
+//表格里商品总额
+.order-content-total{
+ margin-right: 55px;
+ font-weight: 600;
+ color: #333;
+ font-size: 14px;
+}
+
+.order-total-detail{
+ float:right;
+}
+
+//查看详情按钮
+.btn-detail{
+ background-color: #fff;
+ border: 1px solid #d0d0d0;
+ color: #666;
+ text-align: center;
+ font-size: 12px;
+ font-weight: 400;
+ padding: 7px 12px;
+ cursor: pointer;
+ border-radius: 5px;
+}

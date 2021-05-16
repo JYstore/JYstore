@@ -13,6 +13,14 @@ class Admin::OrdersController < ApplicationController
     @product_lists = @order.product_lists
   end
 
+  def destroy
+    @order = Order.find(params[:id])
+    @product_lists = @order.product_lists
+
+    @order.destroy
+    redirect_to admin_orders_path
+  end
+
   def ship
     @order = Order.find(params[:id])
     @order.ship!
