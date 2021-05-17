@@ -233,6 +233,7 @@ li{
   border-radius: 0px;
   background: white;
   margin-bottom: 40px;
+  padding-left: 0px;
 }
 
 //登录页面密码输入框样式
@@ -245,6 +246,7 @@ li{
   border-bottom:2px solid #BDBDBD;
   border-radius: 0px;
   background: white;
+  padding-left: 0px;
 }
 
 //登录页面账户输入框点击时样式
@@ -275,7 +277,7 @@ li{
   margin-bottom: 50px;
 }
 
-//注册页面sign up字样
+//注册页面顶部sign up字样
 .session-sign-up{
   height: 100px;
   display: flex;
@@ -298,6 +300,7 @@ li{
   border-radius: 0px;
   background: white;
   margin: 0px;
+  padding-left: 0px;
 }
 
 //注册页面密码输入框样式
@@ -311,6 +314,7 @@ li{
   border-radius: 0px;
   background: white;
   margin-top: 38px;
+  padding-left: 0px;
 }
 
 //注册页面输入框点击时样式
@@ -339,4 +343,8 @@ li{
   -webkit-box-shadow: 0 0 0 1000px white inset;
   border-bottom:3px solid #8C9EFF;
   overflow: hidden;
+}
+
+.pull-left-1{
+  text-align: left;
 }
