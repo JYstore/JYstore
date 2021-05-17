@@ -122,80 +122,80 @@ body{
   letter-spacing: -0.5px;
  }
 
- .footer-font-small{
-   font-size: 12px;
-   line-height: 1;
-   color: #999;
-   margin-top: -25px;
-   text-align: right;
-   font-weight: 330;
- }
+.footer-font-small{
+  font-size: 12px;
+  line-height: 1;
+  color: #999;
+  margin-top: -25px;
+  text-align: right;
+  font-weight: 330;
+}
 
- .footer-font-small-bottom{
-   font-size: 12px;
-   line-height: 1;
-   color: #999;
-   float: right;
-   margin-top: -10px;
-   font-weight: 340;
- }
+.footer-font-small-bottom{
+  font-size: 12px;
+  line-height: 1;
+  color: #999;
+  float: right;
+  margin-top: -10px;
+  font-weight: 340;
+}
 
 //footer的在线帮助按钮样式
- .button-default1{
-   background-color: #fafafa;
-   border: 1px solid #d0d0d0;
-   color: #5079d9;
-   padding: 5px 36px;
-   text-align: center;
-   font-size: 12px;
-   cursor: pointer;
-   border-radius: 5px;
-   margin-top: -10px;
-   font-weight: 520;
- }
+.button-default1{
+  background-color: #fafafa;
+  border: 1px solid #d0d0d0;
+  color: #5079d9;
+  padding: 5px 36px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: -10px;
+  font-weight: 520;
+}
 
 
- .footer-font-bottom{
-   float: left;
-   line-height: 12px;
-   color: #bdbdbd;
-   padding: 0;
-   margin-top: 14px;
-   font-size: 12px;
- }
+.footer-font-bottom{
+  float: left;
+  line-height: 12px;
+  color: #bdbdbd;
+  padding: 0;
+  margin-top: 14px;
+  font-size: 12px;
+}
 
 //关于商店和隐私条款的内容高度
- .page-height{
-   height: 200px;
- }
+.page-height{
+  height: 200px;
+}
 
 //取消列表前面的圆点
-  li{
-   list-style: none;
- }
+li{
+  list-style: none;
+}
 
  //卡片主体内容
- .card{
-   margin-left: -1px;
-   margin-top: -1px;
-   padding:20px;
-   width: 305px;
-   height: 429px;
-   border-right: 1px solid #efefef;
-   border-bottom: 1px solid #efefef;
-   border-radius: initial;
-   background-color: #fff;
-   -webkit-transition: -webkit-box-shadow .15s ease-out;
-   transition: -webkit-box-shadow .15s ease-out;
-   transition: box-shadow .15s ease-out;
-   transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
-   border-radius: 0px;
-   display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
-   vertical-align: top;//高度对齐
-   text-align: center;
-   cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
-   overflow: hidden;
- }
+.card{
+  margin-left: -1px;
+  margin-top: -1px;
+  padding:20px;
+  width: 305px;
+  height: 429px;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  border-radius: initial;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .15s ease-out;
+  transition: -webkit-box-shadow .15s ease-out;
+  transition: box-shadow .15s ease-out;
+  transition: box-shadow .15s ease-out,-webkit-box-shadow .15s ease-out;
+  border-radius: 0px;
+  display: flex;//指示块状元素，可调整高度，行高以及顶和底边距，总是从新行开始
+  vertical-align: top;//高度对齐
+  text-align: center;
+  cursor: pointer;//鼠标悬停时会变成什么样子，pointer是手掌的样子
+  overflow: hidden;
+}
 
 //登录页面卡片
 .devise-box{
@@ -209,10 +209,10 @@ body{
   border: 1px solid rgba(0,0,0,.14);
   overflow: hidden;
   padding: 38px;
-  box-shadow: 0px 10px 10px 1em #E8EAF6;
+  box-shadow: 0px 10px 30px 0.1px rgba(0, 0, 0, 0.2);
 }
 
-//登录页面sign in字样
+//登录页面顶部sign in字样
 .session-sign-in{
   height: 100px;
   display: flex;
@@ -266,11 +266,11 @@ body{
   overflow: hidden;
 }
 
-//登录页面sign_in字样
+//登录页面sign_in输入框
 .Sign-in-bottom{
   height: 40px;
   width: 365px;
-  background: #536DFE;
+  background: #5f7ed7;
   border-radius: 3px;
   color: #fff;
   margin-top: 20px;
@@ -290,15 +290,15 @@ body{
 
 //注册页面输入框样式
 .session-sign-up-email{
-    -webkit-appearance:none;
-    -moz-appearance: none;
-    -webkit-box-shadow: 0 0 0 1000px white inset;
-    outline: none;
-    border: 0;
-    border-bottom:2px solid #BDBDBD;
-    border-radius: 0px;
-    background: white;
-    margin: 0px;
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  outline: none;
+  border: 0;
+  border-bottom:2px solid #BDBDBD;
+  border-radius: 0px;
+  background: white;
+  margin: 0px;
 }
 
 //注册页面输入框点击时样式
