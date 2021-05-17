@@ -1,25 +1,25 @@
-<div class="devise-box">
-<h2 class="session-sign-up">Sign up</h2>
+<div class="devise-box col-md-5">
+<h2 class="session-sign-up">注册界面</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :email, label: false, placeholder: 'Username',
+    <%= f.input :email, label: false, placeholder: '用户名',
                 required: true,
                 autofocus: true,
                 input_html: { class: "session-sign-up-email", autocomplete: "email" }%>
-    <%= f.input :password, label: false, placeholder: 'Password',
+    <%= f.input :password, label: false, placeholder: '密码',
                 required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { class: "session-sign-up-email", autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation, label: false, placeholder: 'Password_confirmation',
+                hint: ("密码最少为6位数" if @minimum_password_length),
+                input_html: { class: "session-sign-up-password", autocomplete: "new-password" } %>
+    <%= f.input :password_confirmation, label: false, placeholder: '再次输入相同的密码',
                 required: true,
                 input_html: { class: "session-sign-up-email", autocomplete: "new-password" } %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "注册", class: "Sign-up-bottom container-fluid" %>
   </div>
 <% end %>
 

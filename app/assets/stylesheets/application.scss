@@ -203,8 +203,6 @@ li{
   margin-left: 333px;
   background-color: white;
   border-radius: 8px;
-  width: 443px;
-  height: 517px;
   position: relative;
   border: 1px solid rgba(0,0,0,.14);
   overflow: hidden;
@@ -217,6 +215,7 @@ li{
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 35px;
   font-weight: 500;
   word-spacing: 1px;
@@ -269,11 +268,10 @@ li{
 //登录页面sign_in输入框
 .Sign-in-bottom{
   height: 40px;
-  width: 365px;
   background: #5f7ed7;
   border-radius: 3px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -282,6 +280,7 @@ li{
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 35px;
   font-weight: 500;
   word-spacing: 1px;
@@ -301,8 +300,40 @@ li{
   margin: 0px;
 }
 
+//注册页面密码输入框样式
+.session-sign-up-password{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  outline: none;
+  border: 0;
+  border-bottom:2px solid #BDBDBD;
+  border-radius: 0px;
+  background: white;
+  margin-top: 38px;
+}
+
 //注册页面输入框点击时样式
 .session-sign-up-email:focus{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  border-bottom:3px solid #8C9EFF;
+  overflow: hidden;
+}
+
+//注册页面sign_up输入框
+.Sign-up-bottom{
+  height: 40px;
+  background: #5f7ed7;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+//注册页面密码输入框点击时样式
+.session-sign-up-password:focus{
   -webkit-appearance:none;
   -moz-appearance: none;
   -webkit-box-shadow: 0 0 0 1000px white inset;
