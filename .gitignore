@@ -42,3 +42,6 @@ yarn-debug.log*
 
 public/uploads
 /public/images/.DS_Store
+/.DS_Store
+/app/.DS_Store
+/public/.DS_Store
