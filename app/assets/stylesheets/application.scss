@@ -71,8 +71,8 @@ body{
 @media (min-width: 768px) {
 .navbar {
   border-radius: 0; //圆角为0
- }
- }
+}
+}
 
 //去除白色边框
 .navbar-default {
@@ -112,14 +112,14 @@ body{
 }
 
 .footer-font-big{
-   float: right;
-   position: relative;
-   color: #5079d9;
-   font-size: 17.5px;
-   font-weight: 550;
-   line-height: 1;
-   cursor: default;
-   letter-spacing: -0.5px;
+  float: right;
+  position: relative;
+  color: #5079d9;
+  font-size: 17.5px;
+  font-weight: 550;
+  line-height: 1;
+  cursor: default;
+  letter-spacing: -0.5px;
  }
 
  .footer-font-small{
@@ -197,14 +197,115 @@ body{
    overflow: hidden;
  }
 
+//登录页面卡片
 .devise-box{
-  margin-top: 30px;
-  margin-left: 200px;
+  margin-top: 97px;
+  margin-left: 333px;
   background-color: white;
   border-radius: 8px;
-  width: 400px;
+  width: 443px;
+  height: 517px;
   position: relative;
   border: 1px solid rgba(0,0,0,.14);
   overflow: hidden;
-  padding: 30px;
+  padding: 38px;
+  box-shadow: 0px 10px 10px 1em #E8EAF6;
+}
+
+//登录页面sign in字样
+.session-sign-in{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 500;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+//登录页面账户输入框样式
+.session-email {
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  outline: none;
+  border: 0;
+  border-bottom:2px solid #BDBDBD;
+  border-radius: 0px;
+  background: white;
+  margin-bottom: 40px;
+}
+
+//登录页面密码输入框样式
+.session-password {
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  outline: none;
+  border: 0;
+  border-bottom:2px solid #BDBDBD;
+  border-radius: 0px;
+  background: white;
+}
+
+//登录页面账户输入框点击时样式
+.session-email:focus {
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  border-bottom:3px solid #8C9EFF;
+  overflow: hidden;
+}
+
+//登录页面密码输入框点击时样式
+.session-password:focus {
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  border-bottom:3px solid #8C9EFF;
+  overflow: hidden;
+}
+
+//登录页面sign_in字样
+.Sign-in-bottom{
+  height: 40px;
+  width: 365px;
+  background: #536DFE;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+//注册页面sign up字样
+.session-sign-up{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 500;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+//注册页面输入框样式
+.session-sign-up-email{
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    outline: none;
+    border: 0;
+    border-bottom:2px solid #BDBDBD;
+    border-radius: 0px;
+    background: white;
+    margin: 0px;
+}
+
+//注册页面输入框点击时样式
+.session-sign-up-email:focus{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  border-bottom:3px solid #8C9EFF;
+  overflow: hidden;
 }
