@@ -78,6 +78,18 @@ body{
 .navbar-default {
   border-color: transparent;}
 
+.category-array{
+  display: flex;
+  align-items: center;
+  color: red;
+  margin-left: 20px;
+}
+
+.category-array .navbar-brand{
+  font-size: 16px;
+  padding-right: 10px;
+}
+
 //购物车镶嵌板背景颜色
 .panel-default .panel-heading{
   background-color: white;
