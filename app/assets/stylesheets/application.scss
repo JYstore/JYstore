@@ -27,12 +27,12 @@ body{
   min-height: 500px;;
 }
 
-//游海两字样式
-.title-font{
+//底部游海两字样式
+.footer-font{
   font-size: 30px;
   padding-right: 2px;
   font-weight: 500;
-  color: #5099bd;
+  color: #039be5;
 }
 
 //导航栏logo样式
@@ -41,6 +41,15 @@ body{
   margin-right: 10px; //图片和链接文字拉开一点距离
   width: 32px; //定制图片宽度
   height: 25px; //定制图片高度
+}
+
+//底部logo样式
+.bottom-brand > img {
+  display: inline-block; //图片和链接文字显示在同一行
+  margin-right: 10px; //图片和链接文字拉开一点距离
+  width: 32px; //定制图片宽度
+  height: 25px; //定制图片高度
+  margin-bottom: 12px;
 }
 
 //导航栏背景颜色
@@ -138,17 +147,42 @@ a:link {
 }
 }
 
+//底部字样样式
+.footer-information{
+  color: #5099bd;
+}
+
+.footer-information-bootom{
+  color: #66707a;
+}
+
 //底部链接的竖线样式
 .footer-vertical{
   color: #5099bd;
   font-weight: 200;
-  margin-left: 2px;
+  margin-left: 5px;
   margin-right: 2px;
 }
 
 .footer-font-right{
   margin-top: 21px;
   float: right;
+}
+
+//微信扫码图片
+.footer-font-right img{
+  margin-top: 8px;
+  width: 140px;
+  height: 140px;
+  filter: brightness(70%);
+}
+
+//微信扫码图片下面的文字
+.wechat-bottom{
+  color: #616161;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .footer-font-big{
@@ -207,10 +241,10 @@ a:link {
   line-height: 12px;
   color: #bdbdbd;
   padding: 0;
-  margin-top: 14px;
   font-size: 12px;
   width:1218px;
   margin-left: 135px;
+  margin-top: -60px;
 }
 
 //关于商店和隐私条款的内容高度
