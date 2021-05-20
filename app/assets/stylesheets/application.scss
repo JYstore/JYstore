@@ -24,7 +24,7 @@ body{
 
 //内容最低高度,用来撑开内容,不让footer上来
 .container{
-  min-height: 400px;;
+  min-height: 500px;;
 }
 
 
@@ -102,7 +102,7 @@ body{
 //footer盒子
 .footer-box{
   background-color: #09101f;
-  height: 345px;
+  height: 245px;
 }
 
 
@@ -116,20 +116,31 @@ body{
 
 //上左部分字体
 .footer-font-left{
-  margin-top: 46px;
-  word-spacing: 87px;
+  margin-top: 16px;
   font-size: 12px;
   float: left;
   line-height: 25px;
   padding: 7px 0;
 }
 
+//底部链接样式
 .footer-information{
-  color: yellow;
+a:link {
+  color: #5099bd;
+  margin-right: 5px;
+}
+}
+
+//底部链接的竖线样式
+.footer-vertical{
+  color: #5099bd;
+  font-weight: 200;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .footer-font-right{
-  margin-top: 61px;
+  margin-top: 21px;
   float: right;
 }
 
