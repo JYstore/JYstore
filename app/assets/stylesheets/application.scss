@@ -48,6 +48,7 @@ a.navbar-brand{
 a.nav-link{
   color: #a9cedc;
   font-size: 18px;
+  margin-right: 10px;
 }
 //导航栏链接字体鼠标悬浮时样式
 a.nav-link:hover{
@@ -62,7 +63,9 @@ a.nav-link:hover{
 
 .category-array{
   display: flex;
-  
+  align-items: center;
+  color: white;
+  margin-left: 20px;
 }
 
 // //导航栏字体颜色
