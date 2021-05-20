@@ -68,36 +68,16 @@ a.nav-link:hover{
   margin-left: 20px;
 }
 
-// //导航栏字体颜色
-// .navbar-default .navbar-brand {
-//   color: #F5F5F5; //字体颜色
-// }
-//
-// //导航栏链接颜色
-// .navbar-default .navbar-nav > li > a{
-//   color: #F5F5F5;
-//
-//  }
-//
-//  //鼠标放在链接上的颜色
-// .navbar-default .navbar-nav > li > a:hover,
-// .navbar-default .navbar-nav > li > a:focus {
-//   color: #FF6F00;
-//   background-color: transparent;
-//  }
-// .navbar-default .navbar-nav > .active > a,
-// .navbar-default .navbar-nav > .active > a:hover,
-// .navbar-default .navbar-nav > .active > a:focus {
-//   color: #FF6F00;
-//   background-color: #FFE0B2;
-//  }
-//
-// .navbar-default .navbar-nav > .open > a,
-// .navbar-default .navbar-nav > .open > a:focus,
-// .navbar-default .navbar-nav > .open > a:hover {
-//   background-color: #FFE0B2;
-//   color: #212121;
-//  }
+//导航栏下拉选单字体背景颜色以及字体颜色
+.dropdown-item{
+  color: #039be5;
+  background: #263238;
+}
+
+//导航栏下拉选单整体背景颜色
+.dropdown-menu-right{
+  background: #263238;
+}
 
 //去掉导航栏圆角
 @media (min-width: 768px) {
