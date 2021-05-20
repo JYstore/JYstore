@@ -14,7 +14,6 @@
  *= require_self
  */
 
-
 @import 'bootstrap/scss/bootstrap';
 @import "font-awesome";
 
@@ -22,6 +21,12 @@
 body{
   background:#ededed
 }
+
+//内容最低高度,用来撑开内容,不让footer上来
+.container{
+  min-height: 400px;;
+}
+
 
 //导航栏logo样式
 .navbar-brand > img {
@@ -44,7 +49,6 @@ body{
 //导航栏链接颜色
 .navbar-default .navbar-nav > li > a{
   color: #F5F5F5;
-
  }
 
  //鼠标放在链接上的颜色
@@ -95,20 +99,22 @@ body{
   background-color: white;
 }
 
-
-//footer背景颜色
-.footer-container{
-  background-color: #fafafa;
-  height: 338px;
-  margin-top: 338px;
+//footer盒子
+.footer-box{
+  background-color: #09101f;
+  height: 345px;
 }
 
-//footer文字样式
+
+//footer上半部文字样式
 .footer-allfont{
   align-items: center;
   margin-top: 100px;
+  width: 1218px;
+  margin-left: 135px;
 }
 
+//上左部分字体
 .footer-font-left{
   margin-top: 46px;
   word-spacing: 87px;
@@ -116,6 +122,10 @@ body{
   float: left;
   line-height: 25px;
   padding: 7px 0;
+}
+
+.footer-information{
+  color: yellow;
 }
 
 .footer-font-right{
@@ -166,7 +176,14 @@ body{
   font-weight: 520;
 }
 
+//footer分割线
+.footer-hr{
+  background-color: white;
+  width: 1220px;
+  margin-left: 135px;
+}
 
+//footer下半部字体样式
 .footer-font-bottom{
   float: left;
   line-height: 12px;
@@ -174,6 +191,8 @@ body{
   padding: 0;
   margin-top: 14px;
   font-size: 12px;
+  width:1218px;
+  margin-left: 135px;
 }
 
 //关于商店和隐私条款的内容高度
