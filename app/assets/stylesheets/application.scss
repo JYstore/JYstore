@@ -27,45 +27,57 @@ body{
 .navbar-brand > img {
   display: inline-block; //图片和链接文字显示在同一行
   margin-right: 10px; //图片和链接文字拉开一点距离
-  width: 32px; //定制图片宽度
-  height: 25px; //定制图片高度
+  margin-bottom: 8px;
+  width: 48px; //定制图片宽度
+  height: 37.5px; //定制图片高度
+}
+
+//导航栏游海商城样式
+a.navbar-brand{
+  color: #039be5;
+}
+
+//游海两字样式
+.title-font{
+  font-size: 30px;
+  padding-right: 2px;
+  font-weight: 500;
+}
+
+//导航栏链接字体颜色
+a.nav-link{
+  color: #a9cedc;
+  font-size: 18px;
+  margin-right: 10px;
+}
+//导航栏链接字体鼠标悬浮时样式
+a.nav-link:hover{
+  color: #039be5;
 }
 
 //导航栏背景颜色
-.navbar-backgroundcolor{
-  background-color: #222325;
+.navbar-background-color{
+  background-color: #1e212c;
+  height: 80px;
 }
 
-//导航栏字体颜色
-.navbar-default .navbar-brand {
-  color: #F5F5F5; //字体颜色
+.category-array{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
 }
 
-//导航栏链接颜色
-.navbar-default .navbar-nav > li > a{
-  color: #F5F5F5;
+//导航栏下拉选单字体背景颜色以及字体颜色
+.dropdown-item{
+  color: #039be5;
+  background: #263238;
+}
 
- }
-
- //鼠标放在链接上的颜色
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #FF6F00;
-  background-color: transparent;
- }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #FF6F00;
-  background-color: #FFE0B2;
- }
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-  background-color: #FFE0B2;
-  color: #212121;
- }
+//导航栏下拉选单整体背景颜色
+.dropdown-menu-right{
+  background: #263238;
+}
 
 //去掉导航栏圆角
 @media (min-width: 768px) {
@@ -77,18 +89,6 @@ body{
 //去除白色边框
 .navbar-default {
   border-color: transparent;}
-
-.category-array{
-  display: flex;
-  align-items: center;
-  color: red;
-  margin-left: 20px;
-}
-
-.category-array .navbar-brand{
-  font-size: 16px;
-  padding-right: 10px;
-}
 
 //购物车镶嵌板背景颜色
 .panel-default .panel-heading{
