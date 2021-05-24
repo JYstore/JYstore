@@ -14,13 +14,25 @@
  *= require_self
  */
 
-
 @import 'bootstrap/scss/bootstrap';
 @import "font-awesome";
 
 //设置所有页面的背景颜色
 body{
   background:#ededed
+}
+
+//内容最低高度,用来撑开内容,不让footer上来
+.container{
+  min-height: 500px;;
+}
+
+//底部游海两字样式
+.footer-font{
+  font-size: 30px;
+  padding-right: 2px;
+  font-weight: 500;
+  color: #039be5;
 }
 
 //导航栏logo样式
@@ -32,9 +44,25 @@ body{
   height: 37.5px; //定制图片高度
 }
 
+
+//底部logo样式
+.bottom-brand > img {
+  display: inline-block; //图片和链接文字显示在同一行
+  margin-right: 10px; //图片和链接文字拉开一点距离
+  width: 32px; //定制图片宽度
+  height: 25px; //定制图片高度
+  margin-bottom: 12px;
+}
+
+//导航栏背景颜色
+.navbar-backgroundcolor{
+  background-color: #222325;
+}
+
 //导航栏游海商城样式
 a.navbar-brand{
   color: #039be5;
+
 }
 
 //游海两字样式
@@ -43,6 +71,12 @@ a.navbar-brand{
   padding-right: 2px;
   font-weight: 500;
 }
+
+
+//导航栏链接颜色
+.navbar-default .navbar-nav > li > a{
+  color: #F5F5F5;
+ }
 
 //导航栏链接字体颜色
 a.nav-link{
@@ -60,6 +94,7 @@ a.nav-link:hover{
   background-color: #1e212c;
   height: 80px;
 }
+
 
 .category-array{
   display: flex;
@@ -95,32 +130,74 @@ a.nav-link:hover{
   background-color: white;
 }
 
-
-//footer背景颜色
-.footer-container{
-  background-color: #fafafa;
-  height: 338px;
-  margin-top: 338px;
+//footer盒子
+.footer-box{
+  background-color: #09101f;
+  height: 235px;
 }
 
-//footer文字样式
+
+//footer上半部文字样式
 .footer-allfont{
   align-items: center;
   margin-top: 100px;
+  width: 1218px;
+  margin-left: 135px;
 }
 
+//上左部分字体
 .footer-font-left{
-  margin-top: 46px;
-  word-spacing: 87px;
+  margin-top: 20px;
   font-size: 12px;
   float: left;
   line-height: 25px;
   padding: 7px 0;
 }
 
+//底部链接样式
+.footer-information{
+a:link {
+  color: #5099bd;
+  margin-right: 5px;
+}
+}
+
+//底部字样样式
+.footer-information{
+  color: #5099bd;
+}
+
+.footer-information-bootom{
+  color: #66707a;
+}
+
+//底部链接的竖线样式
+.footer-vertical{
+  color: #5099bd;
+  font-weight: 200;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
 .footer-font-right{
-  margin-top: 61px;
+  margin-top: 21px;
   float: right;
+}
+
+//微信扫码图片
+.footer-font-right img{
+  margin-top: 12px;
+  width: 140px;
+  height: 140px;
+  filter: brightness(70%);
+}
+
+//微信扫码图片下面的文字
+.wechat-bottom{
+  color: #616161;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .footer-font-big{
@@ -166,14 +243,23 @@ a.nav-link:hover{
   font-weight: 520;
 }
 
+//footer分割线
+.footer-hr{
+  background-color: white;
+  width: 1220px;
+  margin-left: 135px;
+}
 
+//footer下半部字体样式
 .footer-font-bottom{
   float: left;
   line-height: 12px;
   color: #bdbdbd;
   padding: 0;
-  margin-top: 14px;
   font-size: 12px;
+  width:1218px;
+  margin-left: 135px;
+  margin-top: -60px;
 }
 
 //关于商店和隐私条款的内容高度
@@ -359,4 +445,10 @@ li{
 
 .pull-left-1{
   text-align: left;
+}
+
+.will-page-style{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
