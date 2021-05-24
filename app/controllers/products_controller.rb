@@ -16,7 +16,8 @@ class ProductsController < ApplicationController
     @products = Product.where(:is_hidden => false)
     @product_xians = Product.where(:category => "1").limit(4)
     @product_xias = Product.where(:category => "2").limit(4)
-  end 
+    @product_hots = Product.where(:category => "3").limit(4)
+  end
 
   def add_to_cart
     @product = Product.find(params[:id])
