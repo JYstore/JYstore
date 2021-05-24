@@ -37,10 +37,52 @@
   <br><br><br>
     <div class="bigcard">
       <div class="cardname">
-       商品列表
+       仙剑奇侠传
       </div>
       <div class="row">
-        <% @products.each do |product| %>
+        <% @product_xians.each do |product| %>
+          <div class="col-xs-12 col-xs-3">
+            <div class="fathercard">
+            <div class="card">
+            <%= link_to product_path(product) do %>
+              <% if product.image.present? %>
+                <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
+              <% else %>
+                <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+              <% end %>
+            <% end %>
+              <ol>
+                <div class="title">
+                   <%= product.title %>
+                </div>
+              </ol>
+              <ol>
+                <div class="description">
+                    <%= product.description %>
+                </div>
+              </ol>
+              <br>
+              <ol>
+                <div class="price">
+                   ￥<%= product.price %>.00
+                </div>
+              </ol>
+            </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+  <br><br><br>
+    <div class="bigcard">
+      <div class="cardname">
+       侠客风云传
+      </div>
+      <div class="row">
+        <% @product_xias.each do |product| %>
           <div class="col-xs-12 col-xs-3">
             <div class="fathercard">
             <div class="card">
