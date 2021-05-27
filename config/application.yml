@@ -13,12 +13,11 @@
 production:
   qiniu_access_key: qGmYO-lmiIEseweq1yvOxsqv-fLGgXRCvJHMrFuf  # 你的 qiniu AccessKey
   qiniu_secret_key: JuCnBd3n-P5xL5-DWsGIIrpBJyry6vGWJV7B3qhG  # 你的 qiniu SecretKey
-  qiniu_bucket: jystore-heroku2  # 你的 qiniu bucket
-  qiniu_bucket_domain: qtpkvupra.hd-bkt.clouddn.com  # 你的 qiniu bucket domain
-
+  qiniu_bucket: jystore-heroku3  # 你的 qiniu bucket
+  qiniu_bucket_domain: qtr58fq8z.hd-bkt.clouddn.com  # 你的 qiniu bucket domain
 
 development:
   qiniu_access_key: qGmYO-lmiIEseweq1yvOxsqv-fLGgXRCvJHMrFuf  # 你的 qiniu AccessKey
   qiniu_secret_key: JuCnBd3n-P5xL5-DWsGIIrpBJyry6vGWJV7B3qhG  # 你的 qiniu SecretKey
-  qiniu_bucket: jystore-heroku2  # 你的 qiniu bucket
-  qiniu_bucket_domain: qtpkvupra.hd-bkt.clouddn.com  # 你的 qiniu bucket domain
+  qiniu_bucket: jystore-heroku3  # 你的 qiniu bucket
+  qiniu_bucket_domain: qtr58fq8z.hd-bkt.clouddn.com  # 你的 qiniu bucket domain
