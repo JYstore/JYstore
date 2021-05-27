@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_14_124340) do
+ActiveRecord::Schema.define(version: 2021_05_27_091257) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "title"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 2021_05_14_124340) do
     t.text "repertoire"
     t.text "technical_parameters"
     t.text "adaptive"
+    t.string "image_second"
   end
 
   create_table "services", force: :cascade do |t|

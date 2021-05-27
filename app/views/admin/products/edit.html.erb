@@ -47,6 +47,15 @@
     <%= f.input :image, as: :file %>
   </div>
 
+  <% if @product.image_second.present? %>
+    <span>目前商品图</span> <br>
+    <%= image_tag(@product.image_second.thumb.url) %>
+  <% end %>
+
+  <div class="group">
+    <%= f.input :image_second, as: :file %>
+  </div>
+
   <%= f.input :is_hidden, label: "下架该商品" %>
 
 
