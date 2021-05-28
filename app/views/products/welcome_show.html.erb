@@ -41,15 +41,14 @@
       <div class="row">
         <% @product_hots.each do |product| %>
           <div class="col-xs-12 col-xs-3">
+            <%= link_to product_path(product), class: "product-path" do %>
             <div class="fathercard">
             <div class="card">
-            <%= link_to product_path(product) do %>
               <% if product.image.present? %>
                 <%= image_tag(product.image.url, class: "thumbnail") %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
-            <% end %>
               <ol>
                 <div class="title">
                    <%= product.title %>
@@ -65,6 +64,7 @@
                 </div>
             </div>
             </div>
+            <% end %>
           </div>
         <% end %>
       </div>
@@ -80,15 +80,14 @@
       <div class="row">
         <% @product_xians.each do |product| %>
           <div class="col-xs-12 col-xs-3">
+            <%= link_to product_path(product), class: "product-path" do %>
             <div class="fathercard">
             <div class="card">
-            <%= link_to product_path(product) do %>
               <% if product.image.present? %>
                 <%= image_tag(product.image.url, class: "thumbnail") %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
-            <% end %>
               <ol>
                 <div class="title">
                    <%= product.title %>
@@ -104,6 +103,7 @@
                 </div>
             </div>
             </div>
+            <% end %>
           </div>
         <% end %>
       </div>
@@ -119,15 +119,14 @@
       <div class="row">
         <% @product_xias.each do |product| %>
           <div class="col-xs-12 col-xs-3">
+            <%= link_to product_path(product), class: "product-path" do %>
             <div class="fathercard">
             <div class="card">
-            <%= link_to product_path(product) do %>
               <% if product.image.present? %>
                 <%= image_tag(product.image.url, class: "thumbnail") %>
               <% else %>
                 <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
               <% end %>
-            <% end %>
               <ol>
                 <div class="title">
                    <%= product.title %>
@@ -143,6 +142,7 @@
                 </div>
             </div>
             </div>
+            <% end %>
           </div>
         <% end %>
       </div>
