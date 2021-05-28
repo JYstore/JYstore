@@ -84,6 +84,14 @@
   -webkit-box-orient: vertical;
 }
 
+
+.card .title > li > a:hover, {
+text-decoration:none;
+}
+.card .title > li > a:focus, {
+text-decoration:none;
+}
+
 .card .description {
   margin-right: 25px;
   padding: 0 12px 0;
