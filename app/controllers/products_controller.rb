@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
       @products = Product.where(:is_hidden => false).paginate(:page => params[:page], :per_page => 8)
     else
       @category = Category.find_by(id: params[:category]) #找出是哪个category
-      @products = Product.where(:category => @category).paginate(:page => params[:page], :per_page => 8) #找出这个category下的Job
+      @products = Product.where(:is_hidden => false, :category => @category).paginate(:page => params[:page], :per_page => 8) #找出这个category下的Job
     end
   end
 
