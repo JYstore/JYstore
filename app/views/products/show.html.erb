@@ -96,7 +96,7 @@
           <%= image_tag("http://placehold.it/860x483&text=No Pic", class: "product-image-bottom") %>
         <% end %>
     </div>
-    <div class="product-image">
+    <div class="product-image-bottom">
         <% if @product.image_fifth.present? %>
           <%= image_tag(@product.image_fifth.url, class: "product-image-bottom") %>
         <% else %>
