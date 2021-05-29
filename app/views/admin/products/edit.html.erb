@@ -40,7 +40,7 @@
 
   <% if @product.image.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image.thumb.url) %>
+    <%= image_tag(@product.image.url, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
@@ -51,7 +51,7 @@
 
   <% if @product.image_second.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_second.thumb.url) %>
+    <%= image_tag(@product.image_second.url, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
@@ -62,7 +62,7 @@
 
   <% if @product.image_third.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_third.thumb.url) %>
+    <%= image_tag(@product.image_third.url, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
@@ -73,7 +73,7 @@
 
   <% if @product.image_fourth.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_fourth.thumb.url) %>
+    <%= image_tag(@product.image_fourth.url, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
@@ -84,7 +84,7 @@
 
   <% if @product.image_fifth.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_fifth.thumb.url) %>
+    <%= image_tag(@product.image_fifth.url, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
