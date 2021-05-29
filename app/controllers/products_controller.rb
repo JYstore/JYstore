@@ -3,10 +3,10 @@ class ProductsController < ApplicationController
 
   def index
     if params[:category].blank?
-      @products = Product.where(:is_hidden => false).paginate(:page => params[:page], :per_page => 8)
+      @products = Product.where(:is_hidden => true).paginate(:page => params[:page], :per_page => 8)
     else
       @category = Category.find_by(id: params[:category]) #找出是哪个category
-      @products = Product.where(:category => @category).paginate(:page => params[:page], :per_page => 8) #找出这个category下的Job
+      @products = Product.where(:is_hidden => true, :category => @category).paginate(:page => params[:page], :per_page => 8) #找出这个category下的Job
     end
   end
 
@@ -15,11 +15,11 @@ class ProductsController < ApplicationController
   end
 
   def welcome_show
-    @products = Product.where(:is_hidden => false)
+    @products = Product.where(:is_hidden => true)
 
-    @product_xians = Product.where(:category => "1").limit(4)
-    @product_xias = Product.where(:category => "2").limit(4)
-    @product_hots = Product.where(:category => "3").limit(4)
+    @product_xians = Product.where(:is_hidden => true, :category => "1").limit(4)
+    @product_xias = Product.where(:is_hidden => true, :category => "2").limit(4)
+    @product_hots = Product.where(:is_hidden => true, :category => "3").limit(4)
 
   end
 

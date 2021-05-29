@@ -17,6 +17,7 @@
       <tr>
         <td>
           <%= product.id %>
+          <%= render_product_status(product) %>
         </td>
         <td>
           <%= link_to product_path(product) do %>
