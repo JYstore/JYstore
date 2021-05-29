@@ -1,41 +1,41 @@
-<h2> Edit Product </h2>
+<h2> 编辑商品信息 </h2>
 
 <%= simple_form_for [:admin, @product] do |f| %>
 
   <div class="group">
-    <%= f.input :title %>
+    <%= f.input :title, label: "游戏名称" %>
   </div>
 
   <div class="group">
-    <%= f.input :description %>
+    <%= f.input :description, label: "基本介绍" %>
   </div>
 
   <div class="group">
-    <%= f.input :description_detail %>
+    <%= f.input :description_detail, label: "故事背景" %>
   </div>
 
   <div class="group">
-    <%= f.input :quantity %>
+    <%= f.input :quantity, label: "数量" %>
   </div>
 
   <div class="group">
-    <%= f.input :price %>
+    <%= f.input :price, label: "价格" %>
   </div>
 
   <div class="group">
-    <%= f.input :advantage %>
+    <%= f.input :advantage, label: "上市时间" %>
   </div>
 
   <div class="group">
-    <%= f.input :repertoire %>
+    <%= f.input :repertoire, label: "供应商" %>
   </div>
 
   <div class="group">
-    <%= f.input :technical_parameters %>
+    <%= f.input :technical_parameters, label: "画面" %>
   </div>
 
   <div class="group">
-    <%= f.input :adaptive %>
+    <%= f.input :adaptive, label: "游戏大小" %>
   </div>
 
   <% if @product.image.present? %>
@@ -44,8 +44,10 @@
   <% end %>
 
   <div class="group">
-    <%= f.input :image, as: :file %>
+    <%= f.input :image, label: "游戏展示图", as: :file %>
   </div>
+
+  <hr class="hr-bottom">
 
   <% if @product.image_second.present? %>
     <span>目前商品图</span> <br>
@@ -53,8 +55,10 @@
   <% end %>
 
   <div class="group">
-    <%= f.input :image_second, as: :file %>
+    <%= f.input :image_second, label: "详情页头图", as: :file %>
   </div>
+
+  <hr class="hr-bottom">
 
   <% if @product.image_third.present? %>
     <span>目前商品图</span> <br>
@@ -62,8 +66,10 @@
   <% end %>
 
   <div class="group">
-    <%= f.input :image_third, as: :file %>
+    <%= f.input :image_third, label: "游戏界面图1", as: :file %>
   </div>
+
+  <hr class="hr-bottom">
 
   <% if @product.image_fourth.present? %>
     <span>目前商品图</span> <br>
@@ -71,8 +77,10 @@
   <% end %>
 
   <div class="group">
-    <%= f.input :image_fourth, as: :file %>
+    <%= f.input :image_fourth, label: "游戏界面图2", as: :file %>
   </div>
+
+  <hr class="hr-bottom">
 
   <% if @product.image_fifth.present? %>
     <span>目前商品图</span> <br>
@@ -80,7 +88,7 @@
   <% end %>
 
   <div class="group">
-    <%= f.input :image_fifth, as: :file %>
+    <%= f.input :image_fifth, label: "游戏界面图3", as: :file %>
   </div>
 
   <%= f.input :is_hidden, label: "下架该商品" %>
