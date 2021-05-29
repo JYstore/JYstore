@@ -51,6 +51,6 @@ class Admin::ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:title, :description, :quantity, :price, :image, :is_hidden, :category_id, :description_detail, :advantage, :repertoire, :technical_parameters, :adaptive)
+    params.require(:product).permit(:title, :description, :quantity, :price, :image, :image_second, :image_third, :image_fourth, :image_fifth, :is_hidden, :category_id, :description_detail, :advantage, :repertoire, :technical_parameters, :adaptive)
   end
 end
