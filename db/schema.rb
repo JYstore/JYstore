@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_27_092411) do
+ActiveRecord::Schema.define(version: 2021_05_29_062523) do
 
   create_table "abouts", force: :cascade do |t|
     t.string "title"
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 2021_05_27_092411) do
     t.string "image_third"
     t.string "image_fourth"
     t.string "image_fifth"
+    t.boolean "is_publish", default: false
   end
 
   create_table "services", force: :cascade do |t|
