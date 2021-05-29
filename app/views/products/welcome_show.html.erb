@@ -2,23 +2,29 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="container">
+        <%= link_to product_path(1), class: "product-path" do %>
         <img src="/images/仙剑轮播图.jpeg"/>
         <span class="image-title"></span>
         <span class="image-description"></span>
+        <% end %>
       </div>
     </div>
     <div class="carousel-item">
       <div class="container">
+        <%= link_to product_path(2), class: "product-path" do %>
         <img src="/images/国王轮播图.jpeg"/>
         <span class="image-title"></span>
         <span class="image-description"></span>
+        <% end %>
       </div>
     </div>
     <div class="carousel-item">
       <div class="container">
+        <%= link_to product_path(3), class: "product-path" do %>
         <img src="/images/挽歌轮播图.jpeg"/>
         <span class="image-title"></span>
         <span class="image-description"></span>
+        <% end %>
       </div>
     </div>
   </div>
