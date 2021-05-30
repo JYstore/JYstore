@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   resources :products do
     collection do
       get :search
-    end    
+    end
     collection do
       get :welcome_show
     end
@@ -55,7 +55,11 @@ Rails.application.routes.draw do
     resources :orders
   end
 
-  resources :services
+  resources :services do
+    collection do
+      get :protect
+    end
+  end 
   resources :abouts
   resources :cart_items
 end
