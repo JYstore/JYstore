@@ -24,7 +24,7 @@ body{
 
 //内容最低高度,用来撑开内容,不让footer上来
 .container{
-  min-height: 500px;;
+  min-height: 550px;
 }
 
 //底部游海两字样式
@@ -132,17 +132,17 @@ a.nav-link:hover{
 
 //footer盒子
 .footer-box{
+  display: flex;
+  margin-top:50px;
   background-color: #09101f;
   height: 235px;
+  justify-content:center;
 }
 
 
 //footer上半部文字样式
 .footer-allfont{
-  align-items: center;
-  margin-top: 100px;
   width: 1218px;
-  margin-left: 135px;
 }
 
 //上左部分字体
@@ -258,7 +258,6 @@ a:link {
   padding: 0;
   font-size: 12px;
   width:1218px;
-  margin-left: 135px;
   margin-top: -60px;
 }
 
