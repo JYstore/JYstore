@@ -17,9 +17,9 @@ class ProductsController < ApplicationController
   def welcome_show
     @products = Product.where(:is_hidden => true)
 
-    @product_xians = Product.where(:is_hidden => true, :category => "1").limit(4)
-    @product_xias = Product.where(:is_hidden => true, :category => "2").limit(4)
-    @product_hots = Product.where(:is_hidden => true, :category => "3").limit(4)
+    @product_hots = Product.where(:is_hidden => true, :category => "1").limit(4)
+    @product_xians = Product.where(:is_hidden => true, :category => "2").limit(4)
+    @product_xias = Product.where(:is_hidden => true, :category => "3").limit(4)
 
   end
 
