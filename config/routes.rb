@@ -62,6 +62,9 @@ Rails.application.routes.draw do
     collection do
       get :guardianship
     end
+    collection do
+      get :contact_information
+    end
   end
   resources :abouts
   resources :cart_items
