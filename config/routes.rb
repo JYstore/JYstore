@@ -59,7 +59,10 @@ Rails.application.routes.draw do
     collection do
       get :protect
     end
-  end 
+    collection do
+      get :guardianship
+    end
+  end
   resources :abouts
   resources :cart_items
 end
