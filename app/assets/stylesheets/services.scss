@@ -1,3 +1,45 @@
 // Place all the styles related to the services controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+pre {
+white-space: pre-wrap; /*css-3*/
+white-space: -moz-pre-wrap; /*Mozilla,since1999*/
+white-space: -pre-wrap; /*Opera4-6*/
+white-space: -o-pre-wrap; /*Opera7*/
+word-wrap: break-word; /*InternetExplorer5.5+*/
+}
+
+.service-title{
+  font-size: 24px;
+  text-align: center;
+}
+
+.service-style{
+  background: #fff;
+  margin-top: 40px;
+  margin-left: -54px;
+  padding: 40px;
+  width: 1216px;
+}
+
+.service-bottom{
+  float: right;
+  color: #8c949c;
+}
+
+.guardianship-title{
+  font-size: 24px;
+}
+
+.guardianship-image{
+  width:1135px;
+  text-align: center;
+}
+
+.contact_information-style{
+  background: #fff;
+  margin-top: 40px;
+  margin-left: -54px;
+  padding: 40px;
+  width: 1216px;
+}
