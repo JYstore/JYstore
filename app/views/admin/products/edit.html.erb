@@ -40,55 +40,55 @@
 
   <% if @product.image.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image.url, class: "thumbnail") %>
+    <%= image_tag(@product.image, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
-    <%= f.input :image, label: "游戏展示图", as: :file %>
+    <%= f.input :image, label: "游戏展示图" %>
   </div>
 
   <hr class="hr-bottom">
 
   <% if @product.image_second.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_second.url, class: "thumbnail") %>
+    <%= image_tag(@product.image_second, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
-    <%= f.input :image_second, label: "详情页头图", as: :file %>
+    <%= f.input :image_second, label: "详情页头图" %>
   </div>
 
   <hr class="hr-bottom">
 
   <% if @product.image_third.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_third.url, class: "thumbnail") %>
+    <%= image_tag(@product.image_third, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
-    <%= f.input :image_third, label: "游戏界面图1", as: :file %>
+    <%= f.input :image_third, label: "游戏界面图1" %>
   </div>
 
   <hr class="hr-bottom">
 
   <% if @product.image_fourth.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_fourth.url, class: "thumbnail") %>
+    <%= image_tag(@product.image_fourth, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
-    <%= f.input :image_fourth, label: "游戏界面图2", as: :file %>
+    <%= f.input :image_fourth, label: "游戏界面图2" %>
   </div>
 
   <hr class="hr-bottom">
 
   <% if @product.image_fifth.present? %>
     <span>目前商品图</span> <br>
-    <%= image_tag(@product.image_fifth.url, class: "thumbnail") %>
+    <%= image_tag(@product.image_fifth, class: "thumbnail") %>
   <% end %>
 
   <div class="group">
-    <%= f.input :image_fifth, label: "游戏界面图3", as: :file %>
+    <%= f.input :image_fifth, label: "游戏界面图3" %>
   </div>
 
   <%= f.input :is_hidden, label: "上架" %>
