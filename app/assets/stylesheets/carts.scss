@@ -269,7 +269,13 @@
 
  //订单资讯的卡片
  .cart-check{
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+ }
+
+ //生成订单页面总额上面的分割线
+ .cart-hr-top{
+  width:1195px;
+  float: right;
  }
 
  //订单资料下面的分割线
