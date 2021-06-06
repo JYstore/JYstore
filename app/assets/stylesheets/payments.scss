@@ -1,3 +1,29 @@
 // Place all the styles related to the payments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.cart-box-payment{
+ margin-top: 30px;
+ margin-left: -55px;
+ padding-bottom: 30px;
+ background-color: white;
+ border-radius: 8px;
+ width: 1218px;
+ position: relative;
+ border: 1px solid rgba(0,0,0,.14);
+ overflow: hidden
+}
+
+.payment-hint{
+ display: flex;
+ align-items: center;
+ margin-top: 16px;
+ padding-left: 30px;
+ font-size: 20px;
+}
+
+.payment-body{
+ text-align: center;
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
