@@ -5,7 +5,6 @@ class ProductsController < ApplicationController
   def index
     if params[:category].blank?
       @products = Product.where(:is_hidden => true).paginate(:page => params[:page], :per_page => 8)
-      @category = Category.all
     else
       @category = Category.find_by(id: params[:category]) #找出是哪个category
       @products = Product.where(:is_hidden => true, :category => @category).paginate(:page => params[:page], :per_page => 8) #找出这个category下的Job
