@@ -62,7 +62,7 @@ body{
 //导航栏游海商城样式
 a.navbar-brand{
   color: #039be5;
-
+  margin-right: 8px;
 }
 
 //游海两字样式
@@ -82,7 +82,7 @@ a.navbar-brand{
 a.nav-link{
   color: #a9cedc;
   font-size: 18px;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 //导航栏链接字体鼠标悬浮时样式
 a.nav-link:hover{
@@ -456,6 +456,5 @@ li{
 }
 
 .nav-title{
-  margin-left: 10px;
   margin-right: -20px;
 }
