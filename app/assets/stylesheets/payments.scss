@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+//支付页面的框架
 .cart-box-payment{
  margin-top: 30px;
  margin-left: -55px;
@@ -14,6 +15,7 @@
  overflow: hidden
 }
 
+//支付页面的支付提示
 .payment-hint{
  display: flex;
  align-items: center;
@@ -22,8 +24,13 @@
  font-size: 20px;
 }
 
+//支付页面的主体内容
 .payment-body{
  text-align: center;
  margin-top: 100px;
  margin-bottom: 100px;
+}
+
+.payment-btn{
+ margin-right: 40px;
 }
