@@ -45,7 +45,7 @@
         </div>
   <div class="cart-bottom">
       <span>
-        <% if current_cart.total_price > 0 %>
+        <% if current_cart.cart_items.present? %>
           <%= link_to("确认结账", checkout_carts_path, method: :post, class: "btn-primary-cart pull-right") %>
         <% else %>
           <%= link_to("添加商品", products_path, method: :get, class: "btn-primary-cart pull-right") %>
