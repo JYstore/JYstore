@@ -3,8 +3,7 @@
 <div class="col-md-12">
   <br>
     <div class="product-card-name">
-    <% if @category.blank? %>
-    <% else %>
+    <% if !@category.blank? %>
     <%= @category.name %>
     <% end %>
     </div>
