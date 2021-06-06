@@ -1,13 +1,21 @@
 <div>
   <br><br>
   <% if @query_string.blank? %>
-    <h2 class="search-info-title">
+    <div class="bigcard-search">
+    <h2>游海搜索</h2>
+    <hr class="hr-search">
+    <h2 class="search-info-title search-body-sorry">
       对不起，搜索内容不能为空，请输入游戏名称再进行搜索。
     </h2>
+    </div>
   <% elsif @products.blank? %>
-    <h2 class="search-info-title">找不到您要的游戏</h2>
+    <div class="bigcard-search">
+    <h2>游海搜索</h2>
+    <hr class="hr-search">
+    <h2 class="search-info-title search-body">对不起,找不到您要的游戏</h2>
+    </div>
   <% else %>
-    <h2 class="search-info-title"> 有关"<%= @query_string %>"的游戏信息 </h2>
+    <h2 class="search-info-title search-imformation"> 有关"<%= @query_string %>"的游戏信息 </h2>
     <div class="bigcard">
       <div class="cardname">
        商品列表
