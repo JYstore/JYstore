@@ -370,3 +370,48 @@ text-decoration:none;
 .product-hidden{
   color: #7986CB;
 }
+
+.bigcard-search{
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: -70px;
+  margin-bottom: 0px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  vertical-align: top;
+  width: 1218px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.14);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hr-search{
+  border: 0.1px solid #E0E0E0;
+  width: 1250px;
+  margin-left: -56px;
+  margin-top: 11px;
+}
+
+.search-body{
+  margin-left: 420px;
+  height: 400px;
+  padding-top: 165px;
+}
+
+.search-body-sorry{
+  margin-left: 180px;
+  height: 400px;
+  padding-top: 160px;
+}
+
+.search-imformation{
+  margin-left: -68px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
