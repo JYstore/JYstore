@@ -181,3 +181,26 @@
  cursor: pointer;
  border-radius: 5px;
 }
+
+.cart-box-order{
+ margin-top: 30px;
+ margin-left: -55px;
+ background-color: white;
+ border-radius: 8px;
+ width: 1218px;
+ position: relative;
+ border: 1px solid rgba(0,0,0,.14);
+ overflow: hidden
+}
+
+.cart-check-order{
+ padding: 0 20px 20px 20px;
+ margin-bottom: 40px;
+}
+
+.cart-name-order{
+ padding-left: 20px;
+ width: 512px;
+ margin-bottom: 20px;
+ margin-right: 47px;
+}
