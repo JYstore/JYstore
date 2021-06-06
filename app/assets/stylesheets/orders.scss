@@ -5,10 +5,10 @@
 //订单卡片
 .order-box{
  margin-top: 21px;
- margin-left: 100px;
  background-color: white;
  border-radius: 8px;
- width: 986px;
+ width: 1218px;
+ margin-left: -53px;
  position: relative;
  border: 1px solid rgba(0,0,0,.14);
  overflow: hidden;
@@ -60,17 +60,17 @@
 //订单号码(实数)
 .order-number{
  color: #5079d9;
- padding-right: 369px;
+ padding-right: 360px;
 }
 
 //订单单价
 .order-price{
- padding-right: 78px;
+ padding-right: 87px;
 }
 
 //订单商品数量
 .order-quantity{
- padding-right: 76px;
+ padding-right: 290px;
 }
 
 //订单应付金额
@@ -88,7 +88,7 @@
  position: relative;
  display: flex;
  align-items: center;
- width: 720px;
+ width: 840px;
  padding-bottom: 20px;
  padding-top: 20px;
  padding-left: 20px;
@@ -103,8 +103,7 @@
  right: 0;
  bottom: 0;
  left:0;
- width:603px;
- margin-left: 117px;
+ width:840px;
  background-color: #E9E9E9;
  border: 1rpx solid lightgray;
  margin-bottom: 120px;
@@ -153,7 +152,7 @@
 //表格里商品总额卡片
 .order-total-state{
  float:right;
- margin-right: 20px;
+ margin-right: 45px;
  margin-top: 48px;
 }
 
