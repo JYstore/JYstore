@@ -1,21 +1,18 @@
-<div class="row">
-   <div class="col-md-12">
+<div class="cart-box">
+  <div class="row">
+    <div class="col-md-12">
 
-    <h2> 购物明细 </h2>
+    <h2 class="cart-title"> 购物明细 </h2>
+        <div class="cart-table-title">
+          <span class="name" width="80%" colspan="2">商品明细</span>
+          <span class="cart-price-top">单价</span>
+          <span class="cart-num-top">数量</span>
+        </div>
 
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th width="80%" colspan="2">商品明细</th>
-          <th>单价</th>
-          <th>数量</th>
-        </tr>
-      </thead>
-      <tbody>
-
+        <div class="cart-checkout-table">
         <% current_cart.cart_items.each do |cart_item| %>
-          <tr>
-            <td>
+        <div class="cart-checkout-group">
+          <div class="cart-box-image">
               <%= link_to product_path(cart_item.product) do %>
                 <% if cart_item.product.image.present? %>
                   <%= image_tag(cart_item.product.image, class: "thumbnail") %>
@@ -23,39 +20,33 @@
                   <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
                 <% end %>
               <% end %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-name">
               <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
-            </td>
-            <td>
+            </div>
+            <div class="cart-price">
               <%= cart_item.product.price %>
-            </td>
-
-            <td>
+            </div>
+            <div class="cart-num">
               <%= cart_item.quantity %>
-            </td>
-
-          </tr>
+            </div>
+        </div>
         <% end %>
-
-      </tbody>
-    </table>
-
+        </div>
+     <hr class="cart-hr-top">
     <div class="total clearfix">
-      <span class="pull-right">
+      <span class="cart-total pull-right">
         总计 <%= render_cart_total_price(current_cart) %> CNY
       </span>
     </div>
 
     <hr>
 
+    <div class="cart-check">
     <h2> 订单资讯 </h2>
-
+    <hr class="cart-hr-bottom">
     <div class="order-form">
-
       <%= simple_form_for @order do |f| %>
-
-
           <legend> 收货人</legend>
           <div class="form-group col-lg-6">
            <%= f.input :shipping_name, label: "收件人"  %>
@@ -68,11 +59,13 @@
           </div>
 
         <div class="checkout">
-          <%= f.submit "生成订单", class: "btn btn-lg btn-danger pull-right",
+          <%= f.submit "生成订单", class: "btn btn-lg btn-danger btn-cart-bottom pull-right",
                        data: { disable_with: "Submitting..." } %>
         </div>
       <% end %>
 
+    </div>
+    </div>
     </div>
   </div>
 </div>
