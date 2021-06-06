@@ -82,7 +82,7 @@ a.navbar-brand{
 a.nav-link{
   color: #a9cedc;
   font-size: 18px;
-
+  margin-left: 20px;
 }
 //导航栏链接字体鼠标悬浮时样式
 a.nav-link:hover{
@@ -455,19 +455,7 @@ li{
   border-radius: 1px;
 }
 
-.nav-link-title{
-  color: #a9cedc;
-  font-size: 18px;
-  margin-left: 130px;
-  margin-right: 1px;
-}
-
-.nav-link-body{
-  color: #a9cedc;
-  font-size: 18px;
-  margin-left: -20px;
-  margin-right: 2px;
-}
-
-.nav-link-right{
+.nav-title{
+  margin-left: 10px;
+  margin-right: -20px;
 }
