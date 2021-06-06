@@ -1,5 +1,5 @@
 <div class="cart-box-order">
-<div class="row">
+ <div class="row">
   <div class="col-md-12">
 
     <h2 class="cart-title"> 订单明细 </h2>
@@ -9,9 +9,9 @@
           <span class="price">单价</span>
         </div>
 
-        <div class="cart-table">
+        <div class="cart-checkout-table">
         <% @product_lists.each do |product_list| %>
-             <div class="cart-group">
+             <div class="cart-checkout-group">
              <div class="cart-box-image">
               <%= link_to products_path do %>
                <% if product_list.product_image.present? %>
@@ -21,7 +21,7 @@
                <% end %>
               <% end %>
              </div>
-            <div class="cart-name">
+            <div class="cart-name-order">
               <%= product_list.product_name %>
             </div>
             <div class="cart-price">
@@ -30,28 +30,30 @@
             </div>
         <% end %>
         </div>
-
+     <hr class="cart-hr-top">
 
     <div class="total clearfix">
-      <span class="pull-right">
+      <span class="cart-total pull-right">
         总计 <%= @order.total %> CNY
       </span>
     </div>
 
      <hr>
 
+     <div class="cart-check-order">
      <h2> 寄送资讯 </h2>
+     <hr class="cart-hr-bottom">
 
      <table class="table table-striped table-bordered">
       <tbody>
         <tr>
           <td>
-            收件人
+            收件人信息
           </td>
         </tr>
         <tr>
           <td>
-            <%= @order.shipping_name %> - <%= @order.shipping_address %> - <%= @order.shipping_contact_information %>
+            收件人:<%= @order.shipping_name %> - 收货地址:<%= @order.shipping_address %> - 联系信息:<%= @order.shipping_contact_information %>
           </td>
         </tr>
       </tbody>
@@ -73,6 +75,7 @@
       <p class="text-center">此订单已完成付款,商品正在出库中</p>
     <% end %>
 
+    </div>
   </div>
-</div>
+ </div>
 </div>
